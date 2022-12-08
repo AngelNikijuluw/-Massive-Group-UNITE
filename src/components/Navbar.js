@@ -59,7 +59,7 @@ function NavBar() {
             </NavDropdown>
 
             <Nav.Item>
-              <Nav.Link href="" rel="noreferrer">
+              <Nav.Link href="" rel="noreferrer" style={{border:"1px solid",borderRadius:'5px'}}>
                 Login
               </Nav.Link>
             </Nav.Item>

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Home2 from "./Home2";
+import Home3 from "./Home3";
 import Layout from "../../components/Layout";
 
 function Home() {
@@ -51,6 +52,7 @@ function Home() {
           </Container>
         </Container>
         <Home2 />
+       <Home3 />
       </Layout>
     </section>
   );

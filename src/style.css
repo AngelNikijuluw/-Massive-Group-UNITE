@@ -250,7 +250,7 @@ button:focus {
 .home-section {
   position: relativa;
   z-index: -1;
-  background-color: #DFD4C2;
+  background-color: #aac4ff;
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -344,6 +344,14 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-color: #eef1ff;
+}
+
+.home3 {
+  position: relative;
+  padding-bottom: 70px !important;
+  padding-top: 70px !important;
+  background-color: #aac4ff;
 }
 
 .home-about-description {
