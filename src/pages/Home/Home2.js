@@ -10,7 +10,7 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <h1 className="fitur" style={{textAlign:"center"}}>Fitur Kami</h1>
+          <h1 className="fitur" style={{textAlign:"center",textDecoration:"underline 2px"}}>Fitur Kami</h1>
         <Col
                 sm={3}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
