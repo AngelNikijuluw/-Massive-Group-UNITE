@@ -182,7 +182,7 @@ function Profile() {
           >
             <Card.Img
               variant="top"
-              src={require("../../image/testi1.png")}
+              src
               style={{
                 width: "100px",
                 marginTop: "20px",

@@ -1,15 +1,11 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
+  --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.678),
+      rgba(12, 10, 22, 0.863));
 
   --imp-text-color: #c770f0;
 }
@@ -76,7 +72,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color:blueviolet !important;
+  background-color: white !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -87,6 +83,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  background-color: white;
 }
 
 .navbar-toggler {
@@ -146,10 +143,12 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -160,7 +159,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: black !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -181,19 +180,22 @@ button:focus {
 }
 
 
-.navbar-nav .nav-item a:hover{
-  background-color: blueviolet
-  
+.navbar-nav .nav-item a:hover {
+  background-color: wheat;
 }
 
 /* --------- */
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -201,28 +203,38 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -238,7 +250,7 @@ button:focus {
 .home-section {
   position: relativa;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.png);
+  background-color: #DFD4C2;
   background-size: 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -282,6 +294,7 @@ button:focus {
   padding-left: 45px !important;
 
 }
+
 .heading-website {
   font-size: 1.8em !important;
   padding-left: 45px !important;
@@ -289,7 +302,7 @@ button:focus {
 
 .main-name {
   color: #cd5ff8;
-  
+
 }
 
 .Typewriter__wrapper {
@@ -297,6 +310,7 @@ button:focus {
   color: #be6adf !important;
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #b562d6 !important;
@@ -308,6 +322,7 @@ button:focus {
     font-weight: 500 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -413,8 +428,9 @@ button:focus {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -440,25 +456,28 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
-.footer-copywright ul a{
+
+.footer-copywright ul a {
   color: white;
-  text-decoration:none;
-  opacity:0.8;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer-copywright ul {
   color: white;
-  text-decoration:none;
-  opacity:0.8;
+  text-decoration: none;
+  opacity: 0.8;
 }
+
 .footer-body h3 {
   padding-top: 20px;
-font-weight: bold;
+  font-weight: bold;
   color: white;
 }
 
@@ -470,6 +489,7 @@ font-weight: bold;
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -493,6 +513,7 @@ font-weight: bold;
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }
@@ -521,11 +542,12 @@ h5 {
 }
 
 h2 {
- color: #7883BF;
- font-weight: bold;
+  color: #7883BF;
+  font-weight: bold;
 }
-h3{
- color: white;
+
+h3 {
+  color: white;
 }
 
 .konten-price {
@@ -536,6 +558,7 @@ h3{
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
 .snip1533 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   color: #9e9e9e;
@@ -608,7 +631,7 @@ h3{
   margin-right: 20px;
   width: auto;
   text-align: left;
-  
+
 }
 
 /* --------- */
@@ -622,7 +645,7 @@ h3{
   -webkit-font-smoothing: antialiased;
 }
 
-button{
+button {
   color: rgb(255, 255, 255);
   border: 0;
   border-radius: 5px;
@@ -645,21 +668,25 @@ button{
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
 }
+
 .login-form h1 {
   padding: 35px 35px 0 35px;
   font-weight: 300;
 }
+
 .login-form .content {
   padding: 35px;
   text-align: center;
 }
+
 .login-form .input-field {
   padding: 12px 5px;
 }
+
 .login-form .input-field input {
   font-size: 16px;
   display: block;
@@ -672,24 +699,31 @@ button{
   -webkit-transition: all .2s;
   transition: all .2s;
 }
+
 .login-form .input-field input::-webkit-input-placeholder {
   text-transform: uppercase;
 }
+
 .login-form .input-field input::-moz-placeholder {
   text-transform: uppercase;
 }
+
 .login-form .input-field input:-ms-input-placeholder {
   text-transform: uppercase;
 }
+
 .login-form .input-field input::-ms-input-placeholder {
   text-transform: uppercase;
 }
+
 .login-form .input-field input::placeholder {
   text-transform: uppercase;
 }
+
 .login-form .input-field input:focus {
   border-color: #222;
 }
+
 .login-form a.link {
   text-decoration: none;
   color: #747474;
@@ -698,13 +732,15 @@ button{
   display: inline-block;
   margin-top: 20px;
 }
+
 .login-form .action {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row;
+  flex-direction: row;
 }
+
 .login-form .action a {
   width: 100px;
   border: none;
@@ -722,25 +758,28 @@ button{
   transition: all .3s;
   font-weight: bold;
 }
+
 .login-form .action button:hover {
   background: #d8d8d8;
 }
+
 .login-form .action button:nth-child(2) {
   background: #2d3b55;
   color: #fff;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 4px;
 }
+
 .login-form .action button:nth-child(2):hover {
   background: #3c4d6d;
 }
 
 .login-form .google button {
-margin-left: 120px;
-width: 50%;
-margin-top: 20px;
-margin-bottom: 20px;
-background-color: #000;
+  margin-left: 120px;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #000;
 }
 
 /* --------- */
@@ -748,18 +787,20 @@ background-color: #000;
 /* --------- */
 
 
-.menu-hover ul:hover{
+.menu-hover ul:hover {
   background: whitesmoke;
   color: #000;
-  
+
 }
+
 .menu-hover ul a {
   text-decoration: none;
   color: white;
 }
+
 .menu-hover ul a:hover {
   color: black;
-  
+
 }
 
 @media screen and (max-width: 992px) {
@@ -767,12 +808,14 @@ background-color: #000;
     width: 100%;
   }
 }
+
 .form {
   padding: 0.375rem 0.75rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  
+
 }
+
 .form:focus {
   /* color: #212529; */
   background-color: #fff;
@@ -780,7 +823,3 @@ background-color: #000;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
-
-
-
-

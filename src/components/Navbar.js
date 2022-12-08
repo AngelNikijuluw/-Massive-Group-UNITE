@@ -54,12 +54,12 @@ function NavBar() {
             </Nav.Item>
 
             <NavDropdown title="Event">
-              <NavDropdown.Item href="/HomeCourse">Course</NavDropdown.Item>
-              <NavDropdown.Item href="/HomeArtikel">Artikel</NavDropdown.Item>
+              <NavDropdown.Item href="">List</NavDropdown.Item>
+              <NavDropdown.Item href="">List</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Item>
-              <Nav.Link href="/login" rel="noreferrer">
+              <Nav.Link href="" rel="noreferrer">
                 Login
               </Nav.Link>
             </Nav.Item>
