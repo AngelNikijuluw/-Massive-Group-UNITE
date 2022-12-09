@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Home2 from "./Home2";
 import Home3 from "./Home3";
+import Home4 from "./Home4";
 import Layout from "../../components/Layout";
 
 function Home() {
@@ -53,6 +54,7 @@ function Home() {
         </Container>
         <Home2 />
        <Home3 />
+       <Home4 />
       </Layout>
     </section>
   );
