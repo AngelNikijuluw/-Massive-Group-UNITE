@@ -4,13 +4,14 @@ import homeLogo from "../../Assets/home-main.svg";
 import Home2 from "./Home2";
 import Home3 from "./Home3";
 import Home4 from "./Home4";
+import Home5 from "./Home5";
 import Layout from "../../components/Layout";
 
 function Home() {
   return (
     <section>
       <Layout title="Inveet | Home" showFooter showNavbar>
-        <Container fluid className="home-section" id="home">
+        <Container fluid className="home-section" id="fitur">
           <Container className="home-content">
             <Row>
               
@@ -55,6 +56,7 @@ function Home() {
         <Home2 />
        <Home3 />
        <Home4 />
+       <Home5 />
       </Layout>
     </section>
   );

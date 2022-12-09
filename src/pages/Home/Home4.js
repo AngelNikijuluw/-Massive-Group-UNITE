@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, CardGroup, Button } from "react-bootstrap";
 
 function Home4() {
   return (
-    <Container fluid className="home4" id="about">
+    <Container fluid className="home4" id="pilih">
       <Container>
         <Row>
           <h1 style={{textTransform:"uppercase"}}>Pilih Paket</h1>

@@ -42,21 +42,35 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto">
             <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="home"
                 onClick={() => updateExpanded(false)}
               >
-                Home
+                Fitur
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="about"
+                onClick={() => updateExpanded(false)}
+              >
+                Harga
               </Nav.Link>
             </Nav.Item>
 
-            <NavDropdown title="Event">
-              <NavDropdown.Item href="">List</NavDropdown.Item>
-              <NavDropdown.Item href="">List</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="about"
+                onClick={() => updateExpanded(false)}
+              >
+                Tema
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link href="" rel="noreferrer" style={{border:"1px solid",borderRadius:'5px'}}>
