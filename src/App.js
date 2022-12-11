@@ -16,6 +16,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Dashboard from "./pages/Dashboard/Dasboard";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/Profile" element={<Profile />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           {/* <Footer /> */}
