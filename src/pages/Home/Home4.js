@@ -47,11 +47,13 @@ function Home4() {
                     <li>
                     Dashboard untuk custom undangan</li>
                     <li>Countdown (Hitung Mundur)</li>
-                    <li>Kelolah Tamu (10 Tamu)</li>
+                    <li>Kelolah Tamu (Tak Terbatas)</li>
                     <li>Kolom ucapan</li>
+                    <li>Daftar Tamu</li>
+                    <li>Angpao Cashless</li>
                     <li>Maps</li>
                     <li>Background Music</li>
-                    <li>Gallery (5 Foto)</li>
+                    <li>Gallery (14 Foto)</li>
                     <li>Edit Tanpa Batas</li>
                  </ul>
                  <div>
