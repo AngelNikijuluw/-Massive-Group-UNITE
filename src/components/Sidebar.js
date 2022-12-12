@@ -13,11 +13,11 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-const Sidebar = ({children}) => {
-    const[isOpen ,setIsOpen] = useState(false);
-    const toggle = () => setIsOpen (!isOpen);
+let Sidebar = ({children}) => {
+    let[isOpen ,setIsOpen] = useState(false);
+    let toggle = () => setIsOpen (!isOpen);
 
-    const menuItem = [
+    let menuItem = [
         {
             path : "/Dashboard",
             name : "Dashboard",
