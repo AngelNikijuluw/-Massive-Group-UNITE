@@ -4,6 +4,12 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Profile from "./pages/Profile/Profile";
+import Sidebar from './components/Sidebar.js';
+import About from './pages/Dashboard/About';
+import Analytics from './pages//Dashboard/Analytics';
+import Dashboard from './pages/Dashboard/Dasboard';
+import Product from './pages/Dashboard/Product';
+import ProductList from './pages/Dashboard/ProductList';
 
 
 import {
@@ -16,7 +22,6 @@ import ScrollToTop from "./pages/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dashboard from "./pages/Dashboard/Dasboard";
 
 
 function App() {
@@ -33,6 +38,7 @@ function App() {
   return (
     <>
       <Router>
+      {/* <Sidebar> */}
         <Preloader load={load} />
 
         <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -43,11 +49,17 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/Profile" element={<Profile />} />
-            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route exact path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/productlist" element={<ProductList />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           {/* <Footer /> */}
         </div>
+        {/* </Sidebar> */}
       </Router>
     </>
   );

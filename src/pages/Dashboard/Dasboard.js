@@ -5,16 +5,13 @@ import rsvp from "../../Assets/rsvp.svg";
 import wallet from "../../Assets/wallet.svg";
 import tamu from "../../Assets/tamu.svg";
 import Layout from "../../components/Layout";
+import Sidebar from "../../components/Sidebar";
 
 function Dashboard() {
   return (
-    <Layout title="Inveet | Dashboard" showFooter showNavbar>
-    <Container fluid className="home-about-section" id="about">
-      <Container>
-        
-      </Container>
-    </Container>
-    </Layout>
+    <Sidebar title="Inveet | Dashboard" >
+    
+    </Sidebar>
   );
 }
 export default Dashboard;
