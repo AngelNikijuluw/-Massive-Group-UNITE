@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, CardGroup, Button } from "react-bootstrap";
 
 function Home3() {
   return (
-    <Container fluid className="home3" id="about">
+    <Container fluid className="home3" id="home">
       <Container>
         <Row>
          <Col

@@ -5,13 +5,14 @@ import Home2 from "./Home2";
 import Home3 from "./Home3";
 import Home4 from "./Home4";
 import Home5 from "./Home5";
+import Home6 from "./Home6";
 import Layout from "../../components/Layout";
 
 function Home() {
   return (
     <section>
       <Layout title="Inveet | Home" showFooter showNavbar>
-        <Container fluid className="home-section" id="fitur">
+        <Container fluid className="home-section" id="home">
           <Container className="home-content">
             <Row>
               
@@ -38,8 +39,9 @@ function Home() {
                 <h1 className="heading-website">
                 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
                 </h1>
+                <br></br>
+                <br></br>
 
-          
                 <button
                   style={{
                     color: "white",
@@ -57,6 +59,7 @@ function Home() {
        <Home3 />
        <Home4 />
        <Home5 />
+       <Home6 />
       </Layout>
     </section>
   );

@@ -1,37 +1,34 @@
 import React from "react";
-import { AiFillGoogleCircle } from "react-icons/ai";
-import { Container } from "react-bootstrap";
-import logo from "../../Assets/logo.png";
-import gambar from "../../Assets/gambar.png";
-import Layout from "../../components/Layout";
+import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
+import homeLogo from "../../Assets/home-main.svg";
 
-export default function Login() {
+function Login() {
   return (
-    <Layout title="Tanam Uang | Login">
-      <Container fluid className="home-login" id="Login">
-        <div
-          style={{ float: "left", marginTop: "200px", marginLeft: "350px" }}
-          className="img-login"
-        >
-          <img src={logo} alt="img"></img>
-        </div>
-        <div
-          style={{
-            float: "left",
-            marginTop: "300px",
-            marginLeft: "-450px",
-          }}
-        >
-          <img src={gambar} alt="img"></img>
-        </div>
-
-        <div class="login-form">
-          <form>
-            <h1>Login</h1>
-            <div class="content">
-              <div class="col-md-4 mb-3">
-                <label
-                  style={{ textAlign: "justify" }}
+    <Container fluid className="home-about-section" id="about">
+      <Container>
+        <Card>
+          <Row>
+             <Col
+                md={5}
+                style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}
+              >
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{ maxHeight: "450px" }}
+                />
+              </Col>
+          
+               <Col md={5}
+               style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}>
+                <div class="login-form">
+                   <form>
+                     <h1>Login</h1>
+                       <div class="content">
+                        <div class="col-md-4 mb-3">
+                           <label
+                            style={{ textAlign: "justify" }}
                   for="validationCustom01"
                 >
                   Email
@@ -40,6 +37,8 @@ export default function Login() {
                     class="form"
                     id="validationCustom01"
                     required
+                    
+                    
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
@@ -65,7 +64,7 @@ export default function Login() {
             <div class="google">
               <button>
                 <a href="/">
-                  <AiFillGoogleCircle size={25} />
+                  
                 </a>
                 Login dengan Google
               </button>
@@ -77,7 +76,13 @@ export default function Login() {
             </div>
           </form>
         </div>
+                
+
+              </Col>
+          </Row>
+        </Card>
       </Container>
-    </Layout>
+    </Container>
   );
 }
+export default Login;

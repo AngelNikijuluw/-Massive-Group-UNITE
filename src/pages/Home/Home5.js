@@ -4,15 +4,16 @@ import { Container, Row, Col, Card, CardGroup, Button } from "react-bootstrap";
 
 function Home5() {
   return (
-    <Container fluid className="home4" id="about">
+    <Container fluid className="home5" id="home">
       <Container>
         <Row>
-          <h1 style={{textTransform:"uppercase"}}>Pilih Paket</h1>
+        <h1 className="fitur" style={{textAlign:"left",textTransform:"uppercase",fontWeight:"bold",letterSpacing:"0px",color:'#546D9D',borderBottom:"2px solid"}}>Tema</h1>
           <Col
                 sm={6}
+                className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card style={{borderRadius:"15px"}}>
+                <Card className="card-tema" style={{borderRadius:"15px"}}>
                   <Card.Img src="https://blogpictures.99.co/film-anime-terbaik.png" alt="img">
                     
                   </Card.Img>
@@ -25,9 +26,10 @@ function Home5() {
           </Col>
           <Col
                 sm={6}
+                className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card style={{borderRadius:"15px"}}>
+                <Card  style={{borderRadius:"15px"}}>
                   <Card.Img src="https://blogpictures.99.co/film-anime-terbaik.png" alt="img">
                     
                   </Card.Img>
@@ -36,7 +38,6 @@ function Home5() {
                  </div>
                 </Card>
                 <h1>Comming Soon!</h1>
-                
           </Col>
           
         </Row>
