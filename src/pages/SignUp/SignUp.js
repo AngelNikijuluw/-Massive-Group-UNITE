@@ -1,28 +1,21 @@
 import React from "react";
 import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import Layout from "../../components/Layout";
 
 function SignUp() {
   return (
+    <Layout title="UNI Vitation | Login">
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Card>
-          <Row>
-             <Col
-                md={5}
-                style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}
-              >
+      <div className="warp d-md-flex" style={{}}>
+     
                 <img
-                  src={homeLogo}
+                  src={'https://medinacatering.id/wp-content/uploads/2020/02/4-Wedding-Venue-Pilihan-di-Jakarta-Selatan.jpg'}
                   alt="home pic"
-                  className="img-fluid"
-                  style={{ maxHeight: "450px" }}
+                  style={{width:"100%"}}
                 />
-              </Col>
-          
-               <Col md={5}
-               style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}>
-                <div class="login-form">
+       
+              <div class="login-form">
                    <form>
                      <h1>SignUp</h1>
                        <div class="content">
@@ -37,14 +30,15 @@ function SignUp() {
                     class="form"
                     id="validationCustom01"
                     required
-                    
-                    
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
               </div>
               <div class="col-md-4 mb-3">
-                <label style={{ textAlign: "left" }} for="validationCustom01">
+                           <label
+                            style={{ textAlign: "justify" }}
+                  for="validationCustom01"
+                >
                   Email
                   <input
                     type="text"
@@ -69,8 +63,8 @@ function SignUp() {
               </div>
             </div>
             <div class="action">
-              <a href="/Profile" class="btn btn-secondary">
-                SignUp
+              <a href="/Login" class="btn btn-secondary">
+                Daftar
               </a>
             </div>
             <div class="google">
@@ -78,23 +72,20 @@ function SignUp() {
                 <a href="/">
                   
                 </a>
-                Login dengan Google
+                SignUp dengan Google
               </button>
             </div>
             <div>
               <p>
-                Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
+                Sudah Memiliki Akun ? <a href="/Login">Masuk</a>.
               </p>
             </div>
-          </form>
-        </div>
-                
-
-              </Col>
-          </Row>
-        </Card>
+           </form>
+           </div>
+          </div>
       </Container>
     </Container>
+    </Layout>
   );
 }
 export default SignUp;

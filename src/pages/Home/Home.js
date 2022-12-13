@@ -11,7 +11,7 @@ import Layout from "../../components/Layout";
 function Home() {
   return (
     <section>
-      <Layout title="Inveet | Home" showFooter showNavbar>
+      <Layout title="UNI Vitation | Website Undangan Pernikahan" showFooter showNavbar>
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
             <Row>

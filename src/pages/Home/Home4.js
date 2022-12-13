@@ -29,7 +29,7 @@ function Home4() {
                     <li>Edit Tanpa Batas</li>
                  </ul>
                  <div>
-                  <Button style={{marginBottom:"30px",marginTop:"30px"}}>Pilih</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"30px",backgroundColor:"#aac4ff",color:"black"}}>Pilih</Button>
                  </div>
                 </Card>
                 
@@ -38,7 +38,7 @@ function Home4() {
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-paket" style={{borderRadius:"15px"}}>
+                <Card className="card-paket" style={{borderRadius:"15px",backgroundColor:"#aac4ff"}}>
                   <h1>PREMIUM</h1>
                   <h2>Rp0</h2>
                   <span>Untuk kebutuhan dasar undangan event yang kamu adakan.</span>
@@ -57,7 +57,7 @@ function Home4() {
                     <li>Edit Tanpa Batas</li>
                  </ul>
                  <div>
-                  <Button style={{marginBottom:"30px",marginTop:"30px"}}>Pilih</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"30px",backgroundColor:"white",color:"black"}}>Pilih</Button>
                  </div>
                 </Card>
                 

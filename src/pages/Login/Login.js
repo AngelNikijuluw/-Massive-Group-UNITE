@@ -1,28 +1,23 @@
 import React from "react";
 import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import Layout from "../../components/Layout";
 
 function Login() {
   return (
+    <Layout title="UNI Vitation | Login">
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Card>
-          <Row>
+            <div className="warp d-md-flex" style={{}}>
              <Col
-                md={5}
-                style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}
+                md={8}
               >
                 <img
-                  src={homeLogo}
+                  src={'https://medinacatering.id/wp-content/uploads/2020/02/4-Wedding-Venue-Pilihan-di-Jakarta-Selatan.jpg'}
                   alt="home pic"
-                  className="img-fluid"
-                  style={{ maxHeight: "450px" }}
+                  style={{width:"100%" }}
                 />
               </Col>
-          
-               <Col md={5}
-               style={{ paddingBottom: 20, paddingLeft: 100, paddingTop: 50 }}>
-                <div class="login-form">
+              <div class="login-form">
                    <form>
                      <h1>Login</h1>
                        <div class="content">
@@ -58,7 +53,7 @@ function Login() {
             </div>
             <div class="action">
               <a href="/Profile" class="btn btn-secondary">
-                Login
+                Masuk
               </a>
             </div>
             <div class="google">
@@ -74,15 +69,12 @@ function Login() {
                 Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
               </p>
             </div>
-          </form>
-        </div>
-                
-
-              </Col>
-          </Row>
-        </Card>
+           </form>
+           </div>
+          </div>
       </Container>
     </Container>
+    </Layout>
   );
 }
 export default Login;
