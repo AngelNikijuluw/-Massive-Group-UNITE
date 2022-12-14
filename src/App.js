@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./pages/Pre";
 import Home from "./pages/Home/Home";
+import Fitur from "./pages/Home/Home2";
+import Harga from "./pages/Home/Home4";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Profile from "./pages/Profile/Profile";
@@ -51,6 +53,8 @@ function App() {
             <Route path="/Profile" element={<Profile />} />
             <Route exact path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/fitur" element={<Fitur />} />
+          <Route path="/harga" element={<Harga />} />
           <Route path="/about" element={<About />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/product" element={<Product />} />
