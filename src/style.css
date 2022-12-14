@@ -312,6 +312,13 @@ button:focus {
   text-align: left;
 }
 
+.home-content-akhir {
+  padding: 8rem 0 2rem !important;
+  color: whitesmoke;
+  justify-content: center;
+
+}
+
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;

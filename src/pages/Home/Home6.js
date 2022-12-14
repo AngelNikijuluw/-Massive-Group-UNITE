@@ -5,16 +5,13 @@ import homeLogo from "../../Assets/home-main.svg";
 function Home6() {
   return (
     <Container fluid className="home-akhir" id="home">
-       <Container className="home-content">
-          <Row>
-              <Col className="home-header">
+       <Container className="home-content-akhir">
+          <Row className="justify-content-center">
                 <h1 className="heading-name-akhir">
-                  <strong className="main-name">Mulai buat undangan onlinemu</strong>
+                  <strong className="main-name">Mulai Buat Undangan Onlinemu!!</strong>
                 </h1>
                 <br></br>
-                <Button style={{marginBottom:"30px",marginTop:"30px",width:"110px"}}>Preview</Button>
-              </Col>
-             
+                <Button style={{marginBottom:"30px",marginTop:"30px",width:"110px"}}>Daftar</Button>
             </Row>
           </Container>
         </Container>
