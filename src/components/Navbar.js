@@ -46,7 +46,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="home"
+                to="fitur"
                 onClick={() => updateExpanded(false)}
               >
                 Fitur
@@ -55,7 +55,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="about"
+                to="harga"
                 onClick={() => updateExpanded(false)}
               >
                 Harga
