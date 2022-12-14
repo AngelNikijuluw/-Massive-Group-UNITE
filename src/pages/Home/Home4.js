@@ -4,10 +4,10 @@ import { Container, Row, Col, Card, CardGroup, Button } from "react-bootstrap";
 
 function Home4() {
   return (
-    <Container fluid className="home4" id="home">
+    <Container fluid className="home4" id="harga">
       <Container>
         <Row>
-        <h1 className="fitur" style={{textAlign:"left",textTransform:"uppercase",fontWeight:"bold",letterSpacing:"0px",borderBottom:"2px solid",color:'#546D9D'}}>Harga Paket</h1>
+        <h1 className="harga" style={{textAlign:"left",textTransform:"uppercase",fontWeight:"bold",letterSpacing:"0px",borderBottom:"2px solid",color:'#546D9D'}}>Harga Paket</h1>
           <Col
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
