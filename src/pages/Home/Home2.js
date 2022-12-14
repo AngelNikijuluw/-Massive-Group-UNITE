@@ -7,7 +7,7 @@ import tamu from "../../Assets/tamu.svg";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="home">
+    <Container fluid className="home-about-section" id="fitur">
       <Container>
         <Row>
           <h1 className="fitur" style={{textAlign:"left",textTransform:"uppercase",fontWeight:"bold",letterSpacing:"0px",color:'#546D9D',borderBottom:"2px solid"}}>Fitur Kami</h1>
