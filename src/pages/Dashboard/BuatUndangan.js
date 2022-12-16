@@ -1,14 +1,18 @@
 import React from 'react';
 import Sidebar from "../../components/Sidebar";
 import {Card, Container, Row, Col, Form, Table} from "react-bootstrap";
+import TopBAr from '../../components/TopBar';
 
-const Analytics = () =>{
+const BuatUndangan = () =>{
     return (
-        <Container>
+      <section><TopBAr />
+        <Container >
+          
+          <Sidebar />
           
         <Row 
         style={{ paddingLeft:300, paddingTop:30, paddingRight: 50 }}>
-        <Container fluid className="home-section">
+        <Container fluid className="home-section" >
         <h1>HALO, </h1>
         <h1>SELAMAT DATANG DI </h1>
         <p style={{marginTop:30}}>Ceritakan Pernikahanmu Untuk Membuat Undangan</p>
@@ -174,9 +178,9 @@ const Analytics = () =>{
 
     </Row>
     </Container>
-
+    </section>
     );
     
 }
 
-export default Analytics;
+export default BuatUndangan;

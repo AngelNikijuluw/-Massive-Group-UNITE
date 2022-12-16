@@ -7,11 +7,10 @@ import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import Profile from "./pages/Profile/Profile";
 import Sidebar from './components/Sidebar.js';
-import About from './pages/Dashboard/About';
-import Analytics from './pages//Dashboard/Analytics';
+import BukuTamu from './pages/Dashboard/BukuTamu';
+import BuatUndangan from './pages//Dashboard/BuatUndangan';
 import Dashboard from './pages/Dashboard/Dasboard';
-import Product from './pages/Dashboard/Product';
-import ProductList from './pages/Dashboard/ProductList';
+import Product from './pages/Dashboard/QRCode';
 
 
 import {
@@ -24,6 +23,7 @@ import ScrollToTop from "./pages/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import QRCode from "./pages/Dashboard/QRCode";
 
 
 function App() {
@@ -55,10 +55,9 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/fitur" element={<Fitur />} />
           <Route path="/harga" element={<Harga />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/product" element={<Product />} />
-          <Route path="/productlist" element={<ProductList />} />
+          <Route path="/BukuTamu" element={<BukuTamu />} />
+          <Route path="/BuatUndangan" element={<BuatUndangan />} />
+          <Route path="/QRCode" element={<QRCode />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           {/* <Footer /> */}

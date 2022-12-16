@@ -24,17 +24,17 @@ let Sidebar = ({children}) => {
             icon :<FaTh/>
         },
         {
-            path : "/about",
+            path : "/BukuTamu",
             name : "Buku Tamu",
             icon : <FaBookOpen/>
         },
         {
-            path : "/analytics",
+            path : "/BuatUndangan",
             name : "Buat Undangan",
             icon : <FaEdit/>
         },
         {
-            path : "/product",
+            path : "/QRCode",
             name : "QR Code",
             icon : <AiOutlineQrcode/>
         },

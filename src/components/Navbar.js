@@ -65,7 +65,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="about"
+                to="tema"
                 onClick={() => updateExpanded(false)}
               >
                 Tema
