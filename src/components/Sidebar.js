@@ -42,10 +42,11 @@ let Sidebar = ({children}) => {
     ]
 
     return(
-        <div className="body">
+        <div >
         <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
             <div className="top_section">
-                <h1 style={{display: isOpen ? "block" : "none"}} className="logo">Logo</h1>
+            
+                <h1 style={{display: isOpen ? "block" : "none"}} className="logo"><img src={require('../Assets/UNILOGO.png')} style={{width:"90px",height:"85px"}}/></h1>
                 <div style={{marginLeft: isOpen ? "50px" : "0px"}} className="bars">
                     <FaBars onClick={toggle}/>
                 </div>

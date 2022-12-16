@@ -5,6 +5,7 @@ import {Card, Container, Row, Col, Form, Table} from "react-bootstrap";
 const Analytics = () =>{
     return (
         <Container>
+          
         <Row 
         style={{ paddingLeft:300, paddingTop:30, paddingRight: 50 }}>
         <Container fluid className="home-section">
