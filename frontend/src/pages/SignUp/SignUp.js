@@ -1,8 +1,36 @@
-import React from "react";
+import React,{ useState } from "react";
 import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
 
+
 function SignUp() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [msg, setMsg] = useState('');
+  const navigate = useNavigate();
+
+  const SignUp = async(e) =>{
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/users',{
+        name: name,
+        email: email,
+        password: password
+      });
+     navigate("/login")
+    } catch (error) {
+      if(error.response){
+        setMsg(error.response.data.msg);
+      }
+      
+    }
+
+  }
+
+
   return (
     <Layout title="UNI Vitation | Login">
     <Container fluid className="home-about-section" id="about">
@@ -16,19 +44,21 @@ function SignUp() {
                 />
        
               <div class="login-form">
-                   <form>
+                   <form onSubmit={ SignUp }>
                      <h1>SignUp</h1>
+                     <p className="has-text-centered">{msg}</p>
                        <div class="content">
                         <div class="col-md-4 mb-3">
                            <label
                             style={{ textAlign: "justify" }}
-                  for="validationCustom01"
+                  
                 >
                   Nama
                   <input
                     type="text"
                     class="form"
-                    id="validationCustom01"
+                    
+                    value={name} onChange={(e)=> setName(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
@@ -37,13 +67,14 @@ function SignUp() {
               <div class="col-md-4 mb-3">
                            <label
                             style={{ textAlign: "justify" }}
-                  for="validationCustom01"
+                 
                 >
                   Email
                   <input
                     type="text"
                     class="form"
-                    id="validationCustom01"
+                    
+                    value={email} onChange={(e)=> setEmail(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
@@ -56,6 +87,7 @@ function SignUp() {
                     type="password"
                     class="form"
                     id="validationCustom01"
+                    value={password} onChange={(e)=> setPassword(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
@@ -63,15 +95,12 @@ function SignUp() {
               </div>
             </div>
             <div class="action">
-              <a href="/Login" class="btn btn-secondary">
+              <button class="btn btn-secondary">
                 Daftar
-              </a>
+              </button>
             </div>
             <div class="google">
               <button>
-                <a href="/">
-                  
-                </a>
                 SignUp dengan Google
               </button>
             </div>

@@ -1,8 +1,36 @@
-import React from "react";
+import React,{ useState } from "react";
 import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
 
 function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [msg, setMsg] = useState('');
+  const navigate = useNavigate();
+
+
+  const Auth = async(e) =>{
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/Login',{
+        email: email,
+        password: password
+      });
+     navigate("/dashboard")
+    } catch (error) {
+      if(error.response){
+        setMsg(error.response.data.msg);
+      }
+      
+    }
+
+  }
+
+
+
+
   return (
     <Layout title="UNI Vitation | Login">
     <Container fluid className="home-about-section" id="about">
@@ -18,8 +46,9 @@ function Login() {
                 />
               </Col>
               <div class="login-form">
-                   <form>
+                   <form onSubmit={ Auth }>
                      <h1>Login</h1>
+                     <p className="has-text-centered">{msg}</p>
                        <div class="content">
                         <div class="col-md-4 mb-3">
                            <label
@@ -30,10 +59,8 @@ function Login() {
                   <input
                     type="text"
                     class="form"
-                    id="validationCustom01"
+                    value={email} onChange={(e)=> setEmail(e.target.value)}
                     required
-                    
-                    
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
@@ -44,7 +71,7 @@ function Login() {
                   <input
                     type="password"
                     class="form"
-                    id="validationCustom01"
+                    value={password} onChange={(e)=> setPassword(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
@@ -52,14 +79,13 @@ function Login() {
               </div>
             </div>
             <div class="action">
-              <a href="/Profile" class="btn btn-secondary">
+              <button class="btn btn-secondary">
                 Masuk
-              </a>
+              </button>
             </div>
             <div class="google">
               <button>
                 <a href="/">
-                  
                 </a>
                 Login dengan Google
               </button>

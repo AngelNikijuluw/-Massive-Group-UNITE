@@ -812,7 +812,7 @@ button {
   flex-direction: row;
 }
 
-.login-form .action a {
+.login-form .action button {
   width: 100px;
   border: none;
   padding: 12px;

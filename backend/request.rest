@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJmYWhyaSIsImVtYWlsIjoiZmFocmlAZ21haWwuY29tIiwiaWF0IjoxNjcxMDE4MDk2LCJleHAiOjE2NzEwMTgxMjZ9.mEc-8SFCoR7WcroIww8k007NadNktSbCpmUZXBsTZJA
+
+
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+
+{
+    "name": "fahri",
+    "email": "fahri@gmail.com",
+    "password": "padang",
+    "confPassword": "padang"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fahri@gmail.com",
+    "password": "padang"
+}
+
+###
+GET  http://localhost:5000/token
