@@ -10,7 +10,7 @@ const QRCode = () =>{
             <Container>
             <Sidebar/>
             <Row>
-        <Col md={{ span: 12, offset: 1}}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
+        <Col md={{ span: 12, offset: 1}}><Card style={{backgroundColor:"#AAC4FF",marginTop:"60px"}}>
       <Card.Body >
         <Card.Title >Upgrade Pro</Card.Title>
         <Card.Text >
@@ -19,7 +19,7 @@ const QRCode = () =>{
       </Card.Body>
     </Card></Col>
         <Col md={{ span: 12, offset: 1 }}>
-        <Card Card style={{backgroundColor:"#AAC4FF",height:"500px"}}>
+        <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
         <h1>Qr Code</h1>
         </Card>
         </Col>

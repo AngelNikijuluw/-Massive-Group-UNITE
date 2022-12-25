@@ -61,7 +61,8 @@ main {
   width: 200px;
   transition: all 0.5s;
   margin-left: 0px;
-  
+  position: fixed;
+  z-index: 10;
 }
 
 .top_section {

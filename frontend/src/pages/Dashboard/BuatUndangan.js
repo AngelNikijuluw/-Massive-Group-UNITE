@@ -11,7 +11,7 @@ const BuatUndangan = () =>{
           <Sidebar />
           
         <Row 
-        style={{ paddingLeft:300, paddingTop:30, paddingRight: 50 }}>
+        style={{ paddingLeft:300, paddingTop:60, paddingRight: 50 }}>
         <Container fluid className="home-section" >
         <h1>HALO, </h1>
         <h1>SELAMAT DATANG DI </h1>
@@ -38,61 +38,57 @@ const BuatUndangan = () =>{
         <p style={{marginTop:30}}>Kamu sudah kenalkan dengan pasanganmu. Silahkan diisi agar para tamu jadi lebih kenal</p>
         <Form>
         
-        <div class="row">
-  <div class="col-sm-6">
+        <Row>
+
       <Col
               md={6}
               style={{ paddingBottom: 20, paddingTop: 50}}
-              >
+>
                 <h4 style={{textAlign:"left", width:"200%"}}>Calon Pengantin Pria</h4>
-            <h6 style={{textAlign:"left", marginTop:20}}>Nama *</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <h6 style={{textAlign:"left", marginTop:20,}}>Nama *</h6>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:30}}>Nama Orang Tua:</h6>
             <h6 style={{textAlign:"left", marginTop:10}}>Ibu</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Ibu</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Bio</h6>
-            <input style={{width:"150%", marginLeft:-0, padding:"30px", borderRadius:"10px"}} type="text"></input>
-            <h6 style={{textAlign:"left", marginTop:10}}>Media Sosial</h6>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, padding:"30px", borderRadius:"10px"}} type="text"></input>
+            <h6 style={{textAlign:"left", marginTop:"10"}}>Media Sosial</h6>
+            <input style={{width:"100%",  borderRadius:"10px",marginTop:"10px"}} type="text"></input>
+            <input style={{width:"100%",  borderRadius:"10px",marginTop:"10px"}} type="text"></input>
+            <input style={{width:"100%",  borderRadius:"10px",marginTop:"10px"}} type="text"></input>
             <p style={{textAlign:"left",paddingLeft:50, width:"150%", fontSize:10}}>Tips: Kosongkan jika tidak ada</p>
             <h6 style={{textAlign:"left", marginTop:10}}>Foto Pengantin Pria</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Foto Prewedding</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
                 
               </Col>
-  </div>
-  <div class="col-sm-6">
-      <Col
-              md={6}
-              style={{ paddingBottom: 20, paddingTop: 50}}
-              >
-                <h4 style={{textAlign:"left", width:"200%"}}>Calon Pengantin Pria</h4>
+
+      <Col md={6} style={{ paddingBottom: 20, paddingTop: 50,float:"right"}}>
+                <h4 style={{textAlign:"left", width:"200%"}}>Calon Pengantin Wanita</h4>
             <h6 style={{textAlign:"left", marginTop:20}}>Nama *</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:30}}>Nama Orang Tua:</h6>
             <h6 style={{textAlign:"left", marginTop:10}}>Ibu</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Ibu</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Bio</h6>
-            <input style={{width:"150%", marginLeft:-0, padding:"30px", borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, padding:"30px", borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Media Sosial</h6>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
-            <input style={{width:"123%", marginLeft:50, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%",marginTop:"10px", borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%",marginTop:"10px", borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%",marginTop:"10px", borderRadius:"10px"}} type="text"></input>
             <p style={{textAlign:"left",paddingLeft:50, width:"150%", fontSize:10}}>Tips: Kosongkan jika tidak ada</p>
-            <h6 style={{textAlign:"left", marginTop:10}}>Foto Pengantin Pria</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <h6 style={{textAlign:"left", marginTop:10}}>Foto Pengantin Wanita</h6>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
             <h6 style={{textAlign:"left", marginTop:10}}>Foto Prewedding</h6>
-            <input style={{width:"150%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
+            <input style={{width:"100%", marginLeft:-0, borderRadius:"10px"}} type="text"></input>
               </Col>
-  </div>
-</div>
+
+</Row>
              
 </Form>
 <Form>
@@ -141,7 +137,7 @@ const BuatUndangan = () =>{
             <h6 style={{textAlign:"left", paddingLeft:40}}>Data Tamu</h6>
             <br></br>
             
-            <Table striped bordered hover style={{width:"90%", marginLeft:40}}>
+            <Table striped bordered hover style={{width:"90%"}}>
       <thead>
         <tr>
           <th>No</th>

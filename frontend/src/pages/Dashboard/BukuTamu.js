@@ -11,7 +11,7 @@ const BukuTamu = () =>{
             <Container>
             <Sidebar/>
             <Row>
-        <Col md={{ span: 12, offset: 1}}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
+        <Col md={{ span: 12, offset: 1}}><Card style={{backgroundColor:"#AAC4FF",marginTop:"60px"}}>
       <Card.Body >
         <Card.Title >Upgrade Pro</Card.Title>
         <Card.Text >
@@ -19,9 +19,9 @@ const BukuTamu = () =>{
         </Card.Text>
       </Card.Body>
     </Card></Col>
-      <Col md={{ span: 3, offset: 10 }}><Button variant="primary"><BsPlusCircle/>Tambah Tamu</Button></Col>
+      <Col md={{ span: 3, offset: 10 }}><Button variant="primary" style={{marginTop:"20px"}}><BsPlusCircle/>Tambah Tamu</Button></Col>
       
-        <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF",height:"500px"}}>
+        <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
       <Card.Body>
       <Card.Text style={{textAlign:"center", fontSize:"20px"}}>
         <Form>

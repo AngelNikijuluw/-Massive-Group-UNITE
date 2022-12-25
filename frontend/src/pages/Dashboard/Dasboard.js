@@ -21,7 +21,7 @@ function Dashboard() {
       <Row >
       
         
-        <Col md={{ span: 12, offset: 1 }} style={{marginTop:"20px"}}><Card style={{backgroundColor:"#AAC4FF"}}>
+        <Col md={{ span: 12, offset: 1 }} style={{marginTop:"60px"}}><Card style={{backgroundColor:"#AAC4FF"}}>
       <Card.Body >
         <Card.Title >Upgrade Pro</Card.Title>
         <Card.Text >
@@ -30,14 +30,14 @@ function Dashboard() {
       </Card.Body>
     </Card></Col>
       
-        <Col md={{ span: 4, offset: 1 }} ><Card style={{backgroundColor:"#AAC4FF"}}>
+        <Col md={{ span: 4, offset: 1 }} ><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
       <Card.Body>
         <Card.Text style={{textAlign:"center"}}>
         Link Undangan Kamu <Button variant="primary" style={{width:"auto"}}>Salin</Button>
         </Card.Text>
       </Card.Body>
     </Card></Col>
-        <Col md={{ span: 5, offset: 2 }}><Card style={{backgroundColor:"#AAC4FF"}}>
+        <Col md={{ span: 5, offset: 2 }}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
       <Card.Body>
         <Card.Text>
         <Table striped bordered hover  style={{width:"100%",}}>
@@ -58,7 +58,7 @@ function Dashboard() {
       </Card.Body>
     </Card></Col>
       
-        <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF"}}>
+        <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
       <Card.Body>
       <Card.Text style={{textAlign:"center", fontSize:"20px"}}>
       <Table striped bordered hover  style={{width:"100%",}}>
@@ -84,7 +84,7 @@ function Dashboard() {
       </Card.Body>
     </Card></Col>
 
-    <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF"}}>
+    <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
       <Card.Body>
       <Card.Text style={{textAlign:"center", fontSize:"20px"}}>
         <h1>Calender</h1>

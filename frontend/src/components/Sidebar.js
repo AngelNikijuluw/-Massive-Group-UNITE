@@ -64,5 +64,4 @@ let Sidebar = ({children}) => {
      </div>
     )
 }
-
 export default Sidebar;
