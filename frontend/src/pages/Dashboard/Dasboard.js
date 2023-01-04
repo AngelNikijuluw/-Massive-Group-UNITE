@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col, Card, CardGroup, Button,Table } from "react-bootstrap";
 import homeLogo from "../../Assets/barcode.svg";
 import rsvp from "../../Assets/rsvp.svg";
@@ -7,20 +6,21 @@ import tamu from "../../Assets/tamu.svg";
 import Layout from "../../components/Layout";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 function Dashboard() {
+  const [value, onChange]  = useState(new Date());;
   return (
-    <div  style={{backgroundColor:"#EEF1FF"}}>
-        <TopBar/>
-        <Container>
-        <Sidebar/>
-          
-         
-          
+    
 
-      <Row >
+    <div  style={{backgroundColor:"#EEF1FF"}}>
       
-        
+        <TopBar/>
+        <Sidebar/>
+        <Container>
+      <Row >
         <Col md={{ span: 12, offset: 1 }} style={{marginTop:"60px"}}><Card style={{backgroundColor:"#AAC4FF"}}>
       <Card.Body >
         <Card.Title >Upgrade Pro</Card.Title>
@@ -88,10 +88,13 @@ function Dashboard() {
       <Card.Body>
       <Card.Text style={{textAlign:"center", fontSize:"20px"}}>
         <h1>Calender</h1>
-         
+        
         </Card.Text>
-        <Card.Text><span style={{marginRight:"110px",marginLeft:"40px"}}></span><span style={{marginRight:"30px"}}></span><span style={{marginLeft:"130px"}}></span></Card.Text>
+        <Card.Text>
+        <Calendar onChange={onChange} value={value} />
+        </Card.Text>
       </Card.Body>
+      
     </Card></Col>
       </Row>
       

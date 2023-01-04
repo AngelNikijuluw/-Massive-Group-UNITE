@@ -6,9 +6,10 @@ import TopBAr from '../../components/TopBar';
 const BuatUndangan = () =>{
     return (
       <section><TopBAr />
+       <Sidebar />
         <Container >
           
-          <Sidebar />
+         
           
         <Row 
         style={{ paddingLeft:300, paddingTop:60, paddingRight: 50 }}>

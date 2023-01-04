@@ -21,7 +21,8 @@ let Sidebar = ({children}) => {
         {
             path : "/Dashboard",
             name : "Dashboard",
-            icon :<FaTh/>
+            icon :<FaTh/>,
+            
         },
         {
             path : "/BukuTamu",
