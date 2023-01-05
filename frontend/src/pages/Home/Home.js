@@ -37,7 +37,7 @@ function Home() {
                 <br></br>
 
                 <h1 className="heading-website">
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                Buat undangan online mu dengan uni vitation, undang temanmu dengan mudah.
                 </h1>
                 <br></br>
                 <br></br>
@@ -47,9 +47,10 @@ function Home() {
                     color: "white",
                     marginLeft: "50px",
                     backgroundColor: "#5E6BAD",
+                    borderRadius: "15px",
                   }}
                 >
-                  Jadi Member
+                  Coba Sekarang !
                 </button>
               </Col>
             </Row>

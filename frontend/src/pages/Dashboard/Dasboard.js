@@ -6,12 +6,17 @@ import tamu from "../../Assets/tamu.svg";
 import Layout from "../../components/Layout";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import axios from 'axios';
+import jwt_decode from "jwt-decode";
+import { Navigate } from "react-router-dom";
 
-function Dashboard() {
+
+const Dashboard =() =>{
   const [value, onChange]  = useState(new Date());;
+  
   return (
     
 

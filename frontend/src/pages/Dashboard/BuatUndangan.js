@@ -1,9 +1,30 @@
-import React from 'react';
 import Sidebar from "../../components/Sidebar";
 import {Card, Container, Row, Col, Form, Table} from "react-bootstrap";
 import TopBAr from '../../components/TopBar';
+import axios from 'axios';
+import jwt_decode from "jwt-decode";
+import React, { useState, useEffect } from 'react';
 
 const BuatUndangan = () =>{
+
+  const [name, setName] = useState('');
+    const [token, setToken] = useState('');
+
+    useEffect(() =>{
+      refreshToken();
+    },[]);
+
+    const refreshToken = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/token');
+        setToken(response.data.accessToken);
+        const decoded = jwt_decode(response.data.accessToken);
+        setName(decoded.name);
+        console.log(decoded);
+      } catch (error) {
+        
+      }
+    }
     return (
       <section><TopBAr />
        <Sidebar />
@@ -14,7 +35,7 @@ const BuatUndangan = () =>{
         <Row 
         style={{ paddingLeft:300, paddingTop:60, paddingRight: 50 }}>
         <Container fluid className="home-section" >
-        <h1>HALO, </h1>
+        <h1>HALO, {name}</h1>
         <h1>SELAMAT DATANG DI </h1>
         <p style={{marginTop:30}}>Ceritakan Pernikahanmu Untuk Membuat Undangan</p>
         <Form>

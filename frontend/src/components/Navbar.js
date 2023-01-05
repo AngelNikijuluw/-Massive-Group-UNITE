@@ -71,19 +71,11 @@ function NavBar() {
                 Tema
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="Dashboard"
-                onClick={() => updateExpanded(false)}
-              >
-                Dashboard
-              </Nav.Link>
-            </Nav.Item>
+            
 
             <Nav.Item>
               <Nav.Link href="/Login" rel="noreferrer" style={{border:"1px solid",borderRadius:'5px'}}>
-                Login
+                Masuk
               </Nav.Link>
             </Nav.Item>
           </Nav>

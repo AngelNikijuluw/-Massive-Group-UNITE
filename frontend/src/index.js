@@ -4,6 +4,8 @@ import "./index.css";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import axios from 'axios';
+axios.defaults.withCredentials = true
 
 ReactDOM.render(
   <React.StrictMode>

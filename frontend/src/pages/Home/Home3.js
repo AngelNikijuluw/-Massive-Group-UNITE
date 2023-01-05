@@ -12,7 +12,7 @@ function Home3() {
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
                 
-                <h1 style={{fontSize:"25px",textAlign:"left"}}>UNIK Sudah Banyak Dipercaya</h1>
+                <h1 style={{fontSize:"25px",textAlign:"left",backgroundColor:"#447294",textTransform:"uppercase"}}>UNIK Sudah Banyak Dipercaya</h1>
                 <p style={{textAlign:"left"}}>Kami memiliki tujuan untuk membantu memudahkan orang-orang dalam membuat undangan online dan juga menjaga alam untuk mengurangi penggunaan kertas</p>
                 
             </Col>

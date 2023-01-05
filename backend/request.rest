@@ -1,6 +1,5 @@
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJmYWhyaSIsImVtYWlsIjoiZmFocmlAZ21haWwuY29tIiwiaWF0IjoxNjcxMDE4MDk2LCJleHAiOjE2NzEwMTgxMjZ9.mEc-8SFCoR7WcroIww8k007NadNktSbCpmUZXBsTZJA
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTY3Mjg0MTA4MywiZXhwIjoxNjcyODQxMTEzfQ.87nGF3AZMB-s_Zl3ay_f29E8YM6gOE4nPdBRVNENpHg
 
 
 ###
@@ -20,9 +19,12 @@ POST  http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "fahri@gmail.com",
-    "password": "padang"
+    "email": "admin@gmail.com",
+    "password": "admin"
 }
 
 ###
 GET  http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout

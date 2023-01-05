@@ -50,7 +50,7 @@ function Home2() {
                   style={{ maxHeight: "450px" }}
                 />
                 <h1 style={{fontSize:"25px"}}>Buku Tamu</h1>
-                <span>Kamu dapat mendata kehadiran tamu.
+                <span>Kamu mendapatkan data kehadiran tamu secara automatis.
 </span>
                 
               </Col>
@@ -65,7 +65,7 @@ function Home2() {
                   style={{ maxHeight: "450px" }}
                 />
                 <h1 style={{fontSize:"25px"}}>Angpao cashless</h1>
-                <span>Kamu dapat mendata kehadiran tamu.</span>
+                <span>Kamu dapat menerima hadiah dari orang terkasih meskipun mereka tidak hadir secara langsung.</span>
                 
               </Col>
         </Row>

@@ -3,6 +3,7 @@ import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
+import foto from "../../Assets/foto.png";
 
 function Login() {
   const [email, setEmail] = useState('');
