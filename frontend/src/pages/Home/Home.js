@@ -31,12 +31,12 @@ function Home() {
 
               <Col md={7} className="home-header">
                 
-                <h1 className="heading-name">
+                <h1 className="heading-name" style={{color:"black"}}>
                   <strong className="main-name"> Welcome!!</strong>
                 </h1>
                 <br></br>
 
-                <h1 className="heading-website">
+                <h1 className="heading-website" style={{color:"black"}}>
                 Buat undangan online mu dengan uni vitation, undang temanmu dengan mudah.
                 </h1>
                 <br></br>

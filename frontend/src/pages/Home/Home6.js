@@ -11,7 +11,7 @@ function Home6() {
                   <strong className="main-name">Mulai Buat Undangan Onlinemu!!</strong>
                 </h1>
                 <br></br>
-                <Button style={{marginBottom:"30px",marginTop:"30px",width:"150px"}}>Coba Sekarang !</Button>
+                <Button style={{marginBottom:"30px",marginTop:"30px",width:"150px",backgroundColor:"#447294",borderRadius:"20px"}}>Coba Sekarang !</Button>
             </Row>
           </Container>
         </Container>

@@ -12,24 +12,27 @@ function Home4() {
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-paket" style={{borderRadius:"15px"}}>
+                <Card className="card-paket" style={{borderRadius:"15px",boxShadow:"5px 4px 3px #AAC4FF",height:"530px",width:"500px"}}>
                   <h1>FREE</h1>
-                  <h2>Rp0</h2>
+                  <h2 style={{fontFamily:"serif"}}>Rp0</h2>
                   <span>Untuk kebutuhan dasar undangan event yang kamu adakan.</span>
                   <br></br>
                  <ul style={{textAlign:"justify"}}>
                     <li>
                     Dashboard untuk custom undangan</li>
+                    <li>RSVP</li>
                     <li>Countdown (Hitung Mundur)</li>
                     <li>Kelolah Tamu (10 Tamu)</li>
                     <li>Kolom ucapan</li>
+                    <li>Angpao Cashless</li>
                     <li>Maps</li>
                     <li>Background Music</li>
-                    <li>Gallery (5 Foto)</li>
+                    <li>Aktif Selamanya</li>
+                    <li>Gallery (14 Foto)</li>
                     <li>Edit Tanpa Batas</li>
                  </ul>
                  <div>
-                  <Button style={{marginBottom:"30px",marginTop:"30px",backgroundColor:"#aac4ff",color:"black"}}>Pilih</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"5spx",backgroundColor:"#B1B2FF",color:"#443D43",borderRadius:"20px",}}>Pilih</Button>
                  </div>
                 </Card>
                 
@@ -38,18 +41,18 @@ function Home4() {
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-paket" style={{borderRadius:"15px",backgroundColor:"#aac4ff"}}>
-                  <h1>PREMIUM</h1>
-                  <h2>Rp0</h2>
+                <Card className="card-paket" style={{borderRadius:"15px",backgroundColor:"#aac4ff",boxShadow:"5px 4px 3px #447294",width:"500px"}}>
+                  <h1>PRO</h1>
+                  <h2 style={{fontFamily:"serif"}}>Rp50.000</h2>
                   <span>Untuk kebutuhan dasar undangan event yang kamu adakan.</span>
                   <br></br>
                  <ul style={{textAlign:"justify"}}>
                     <li>
                     Dashboard untuk custom undangan</li>
+                    <li>RSVP</li>
                     <li>Countdown (Hitung Mundur)</li>
                     <li>Kelolah Tamu (Tak Terbatas)</li>
                     <li>Kolom ucapan</li>
-                    <li>Daftar Tamu</li>
                     <li>Angpao Cashless</li>
                     <li>Maps</li>
                     <li>Background Music</li>
@@ -57,7 +60,7 @@ function Home4() {
                     <li>Edit Tanpa Batas</li>
                  </ul>
                  <div>
-                  <Button style={{marginBottom:"30px",marginTop:"30px",backgroundColor:"white",color:"black"}}>Pilih</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"30px",backgroundColor:"#447294",color:"white",borderRadius:"20px"}}>Pilih</Button>
                  </div>
                 </Card>
                 
@@ -66,6 +69,7 @@ function Home4() {
         </Row>
       </Container>
     </Container>
+
   );
 }
 export default Home4;
