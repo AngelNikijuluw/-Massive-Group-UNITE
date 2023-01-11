@@ -26,6 +26,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import QRCode from "./pages/Dashboard/QRCode";
 import Sakura from "./pages/tema/temasakura";
 import Sakura2 from "./pages/tema/sakura2";
+import BW from "./pages/tema/temaBW";
+import BW2 from "./pages/tema/BW";
 
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
           <Route path="/QRCode" element={<QRCode />} />
           <Route path="/Sakura" element={<Sakura />} />
           <Route path="/Sakura2" element={<Sakura2 />} />
+          <Route path="/BW" element={<BW />} />
+          <Route path="/BW2" element={<BW2 />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           {/* <Footer /> */}
