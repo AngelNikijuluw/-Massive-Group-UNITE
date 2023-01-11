@@ -28,6 +28,8 @@ import Sakura from "./pages/tema/temasakura";
 import Sakura2 from "./pages/tema/sakura2";
 import BW from "./pages/tema/temaBW";
 import BW2 from "./pages/tema/BW";
+import Vin from "./pages/tema/temavin";
+import Vin2 from "./pages/tema/vin";
 
 
 function App() {
@@ -66,6 +68,8 @@ function App() {
           <Route path="/Sakura2" element={<Sakura2 />} />
           <Route path="/BW" element={<BW />} />
           <Route path="/BW2" element={<BW2 />} />
+          <Route path="/Vin" element={<Vin />} />
+          <Route path="/Vin2" element={<Vin2 />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
           {/* <Footer /> */}

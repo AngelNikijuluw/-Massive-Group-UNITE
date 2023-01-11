@@ -22,7 +22,9 @@ function Home5() {
                     
                   </Card.Img>
                  <div>
+                 <Link to="/Vin">
                   <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                 </Link>
                  </div>
                 </Card>
                 <h1>Vintage</h1>

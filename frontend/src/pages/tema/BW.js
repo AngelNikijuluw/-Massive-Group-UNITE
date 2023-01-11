@@ -279,7 +279,7 @@ const BW2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{backgroundColor:"#444444",borderColor:"#444444",color:"#fff"}}>
+                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0",color:"#fff"}}>
                   <Card.Text style={{textAlign:"center",fontSize:"15px"}} >
                   <p>Kota Batam</p>
                 <p style={{fontFamily:"Corinthia",fontSize:"50px"}}>Akad Nikah</p>
@@ -298,7 +298,7 @@ const BW2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{backgroundColor:"#444444",borderColor:"#444444",color:"#fff"}}>
+                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0",color:"#fff"}}>
                   <Card.Text style={{textAlign:"center",fontSize:"15px"}} >
                   <p>Kota Batam</p>
                 <p style={{fontFamily:"Corinthia",fontSize:"50px"}}>Resepsi</p>
