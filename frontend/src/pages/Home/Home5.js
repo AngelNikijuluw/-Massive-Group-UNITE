@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, CardGroup, Button } from "react-bootstrap";
 import tema from "../../Assets/tema.png";
 import tema1 from "../../Assets/tema1.png";
 import tema2 from "../../Assets/tema2.png";
+import { Link } from "react-router-dom";
 
 
 function Home5() {
@@ -37,7 +38,9 @@ function Home5() {
                     
                   </Card.Img>
                  <div>
-                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                 <Link to="/Sakura">
+                 <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                  </Link>
                  </div>
                 </Card>
                 <h1>Sakura</h1>
