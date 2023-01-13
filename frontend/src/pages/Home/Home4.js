@@ -12,7 +12,7 @@ function Home4() {
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-paket" style={{borderRadius:"15px",boxShadow:"5px 4px 3px #AAC4FF",height:"530px",width:"500px"}}>
+                <Card className="card-paket" style={{borderRadius:"15px",boxShadow:"5px 4px 3px #AAC4FF",}}>
                   <h1>FREE</h1>
                   <h2 style={{fontFamily:"serif"}}>Rp0</h2>
                   <span>Untuk kebutuhan dasar undangan event yang kamu adakan.</span>
@@ -41,7 +41,7 @@ function Home4() {
                 md={6}
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-paket" style={{borderRadius:"15px",backgroundColor:"#aac4ff",boxShadow:"5px 4px 3px #447294",width:"500px"}}>
+                <Card className="card-paket" style={{borderRadius:"15px",backgroundColor:"#aac4ff",boxShadow:"5px 4px 3px #447294"}}>
                   <h1>PRO</h1>
                   <h2 style={{fontFamily:"serif"}}>Rp50.000</h2>
                   <span>Untuk kebutuhan dasar undangan event yang kamu adakan.</span>

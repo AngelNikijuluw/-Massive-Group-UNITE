@@ -4,12 +4,35 @@ import { Link } from 'react-router-dom';
 const Vin = () =>{
     return (
         
-            <div>
-              <img src={require('../../image/vin1.png')} style={{backgroundSize: "cover",width:"100%",zIndex:"1",position:"relative"}}/>
-              <Link to="/Vin2">
-            <Button style={{zIndex:"2",position:"absolute",right:"150px",top:"550px",borderColor:"#000",backgroundColor:"#8D7147",color:"#fff"}}>Buka Undangan</Button>
+            <section>
+             
+      <strong>
+      <Row>
+                
+                
+      <Card.Img src={require('../../image/vin1.png')} style={{backgroundSize: "cover",width:"100%"}} />
+      <Card.ImgOverlay>
+      <Col sm={6} style={{float:"left",height:"auto"}}>
+        <Card.Text style={{textAlign:"center",fontSize:"3vw"}}> Dear, Fahri Efendi </Card.Text>
+        <Card.Text style={{textAlign:"center",fontSize:"2vw"}}>You are Invite !</Card.Text>
+        <Card.Text style={{textAlign:"center",fontSize:"2vw"}}>The Wedding of</Card.Text>
+              <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
+        <Card.Text style={{fontFamily:"Corinthia",fontSize:"10vw",color:"#816C4D",textAlign:"center"}}>Alfi & Yunita</Card.Text>
+        <Card.Text style={{textAlign:"center",fontSize:"2vw"}}>22 Desember 2022</Card.Text>
+        
+        <Link to="/Vin2">
+            <Button style={{borderColor:"#000",backgroundColor:"#8D7147",color:"#fff",width:"auto"}}>Buka Undangan</Button>
             </Link>
-            </div>
+        </Col>
+        
+      </Card.ImgOverlay>
+      
+                
+              </Row>
+            
+    </strong>
+            </section>
+            
       );
     }
 
