@@ -21,8 +21,21 @@ function Home3() {
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
                 
-                <h1 style={{fontSize:"25px",textAlign:"right"}}>| 800+  <span style={{marginLeft:"10px"}}> |</span><span style={{marginLeft:"50px"}}>60.000+  </span> <span style={{marginLeft:"50px"}}></span>|100+</h1>
-                <h1 style={{fontSize:"16px",textAlign:"right"}}> <span style={{marginRight:"50px"}}>Dibuat</span>  <span style={{marginRight:"10px"}}>Undangan disebar</span> <span style={{marginLeft:"35px"}}>Online</span></h1>
+                <h1 style={{fontSize:"34px",float:"right"}}>
+                  <table>
+                    <tr>
+                      <td>| 800+</td>
+                      <td>|60.000+</td>
+                      <td>|100+</td>
+                    </tr>
+                    <tr style={{fontSize:"15px"}}>
+                      <td>Dibuat</td>
+                      <td>Undangan disebar</td>
+                      <td>Online</td>
+                    </tr>
+                  </table>
+                  
+                     </h1>
 
                 
             </Col>
