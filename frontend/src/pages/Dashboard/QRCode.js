@@ -22,7 +22,7 @@ function QRCode (){
   const hasil =JSON.parse(data);
 
 
-  const bu =(hasil.data);
+  const bug =(hasil.data);
 
 
 
