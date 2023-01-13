@@ -9,15 +9,26 @@ import { Link } from "react-router-dom";
 import QrReader from 'react-web-qr-reader';
 
 function QRCode (){
-  const [data, setdata] = useState('No result');
-  const handleScan = data => {
-      if (data) {
-          setdata(data)
+  const [result, setResult] = useState('No result');
+  const handleScan = (result) => {
+      if (result) {
+          setResult(result)
       }
-  }
+  };
   const handleError = err => {
-  console.error(err)
+  alert("error")
   }
+  const data= (JSON.stringify(result));
+  const hasil =JSON.parse(data);
+
+
+  const bug =(hasil.data);
+
+
+
+ 
+  
+  
     return (
         <div  style={{backgroundColor:"#EEF1FF"}}>
             <TopBAr/>
@@ -52,6 +63,12 @@ function QRCode (){
                 />
             </div>
             </center>
+            <TextareaAutosize
+            style={{fontsize:18, width:320, hight:100, marginTop:300}}
+            defaultValue={bug}
+            value={bug}
+
+            />
 
             
 
