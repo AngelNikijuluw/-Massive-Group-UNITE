@@ -14,9 +14,10 @@ const Vin2 = () =>{
      <img src={require('../../image/vin2.png')} style={{width:"100%",}}/>
      
      <section>
-     <Button style={{borderColor:"#FFA8BA",backgroundColor:"#8D7147",color:"#fff",zIndex:"10",position:"absolute",top:"10px",borderRadius:"20px",color:"white",borderColor:"white",right:"10px"}}><AiFillPlayCircle/>Play Music</Button>
-     <img src={require('../../image/vin3.png')}  style={{backgroundSize: "cover",width:"100%",zIndex:"1",position:"relative"}}/>
-            <table style={{zIndex:"2",position:"absolute",top:"850px",color:"#000"}}>
+     <Button style={{borderColor:"#FFA8BA",backgroundColor:"#8D7147",color:"#fff",zIndex:"10",position:"absolute",top:"10px",borderRadius:"20px",color:"white",borderColor:"white",right:"10px",width:"auto"}}><AiFillPlayCircle/><span style={{margin:"20px"}}>Play Music</span></Button>
+            
+            <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"650px"}}>
+            <table style={{zIndex:"2",position:"absolute",color:"#000"}}>
               <tr>
                 <p>Assalamu'alaikum warahmatullahi wabarakatuh</p>
                 <p >Bismillahirrahmanirrahim</p>
@@ -29,14 +30,16 @@ const Vin2 = () =>{
                 <p>Putri Sulung Bapak Syaiful & Ibu Yuliana</p>
               </tr>
               <Row style={{marginTop:"50px"}}>
-                <Col>
-                <Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",color:"fff"}}>Hadir</Button></Col>
-                <Col>
-                <Button style={{borderColor:"#8D7147",backgroundColor:"#CCC0B0",color:"#8D7147"}}>Hadir</Button></Col>
+                <Col style={{margin:"20px"}}>
+                <Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
+                <Col style={{margin:"20px"}}>
+                <Button style={{borderColor:"#8D7147",backgroundColor:"#CCC0B0",color:"#8D7147",borderRadius:"15px"}}>Hadir</Button></Col>
               </Row>
             </table>
+          </div>
+        
             <section>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#2B292A"}}>Penyelenggara</p>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#2B292A"}}>Penyelenggara</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               
               <Row className="justify-content-md-center">
@@ -96,15 +99,16 @@ const Vin2 = () =>{
               </a>
                   Visit Instagram</Button>
           </Col>
-
-        
-          </Row>
-          <p style={{zIndex:"2",position:"absolute",right:"630px",top:"2560px",color:"#000"}}>Qs Ar-Rum 21</p>
-          <img src={require('../../image/vin4.png')} style={{width:"100%",position:"relative",zIndex:"1"}}/>
           
-          <p style={{zIndex:"2",position:"absolute",top:"2400px",color:"#000"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
-           
-          <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#2B292A"}}>Galery</p>
+          </Row>
+          <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"350px",marginTop:"50px"}}>
+          <Row>
+          <p  style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"50px"}}>Qs Ar-Rum 21</p>
+          
+          <p style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"150px"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
+          </Row>
+           </div>
+          <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#2B292A"}}>Galery</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
             </section>
             <Row className="justify-content-md-center">
@@ -256,10 +260,10 @@ const Vin2 = () =>{
                 </Card>
           </Col>
             </Row>
-            <img src={require('../../image/vin5.png')} style={{width:"100%",position:"relative",zIndex:"1",marginTop:"100px"}}/>
-            <section style={{position:"absolute",zIndex:"2",top:"4500px",right:"100px"}}>
-            <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#2B292A"}}>Lokasi</p>
+           
+            <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#2B292A"}}>Lokasi</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
+              <Card style={{backgroundColor:"#CCC0B0",width:"auto ",marginTop:"50px"}}>
               <Row>
                 
 
@@ -268,7 +272,7 @@ const Vin2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{width:"500px"}}>
+                <Card style={{width:"auto"}}>
                   <Card.Img src={require('../../image/vinlokasi.png')}  >
                     
                   </Card.Img>
@@ -288,14 +292,14 @@ const Vin2 = () =>{
                 <p>Perum. Legenda Malaka Blok G4 No. 12A Batam Centre - Kota Batam</p>
                 <p>22 Desember 2022 09.00</p>
                 <p>Sampai Selesai</p>
-                <Button style={{backgroundColor:"#8D7147",borderColor:"#fff"}}>Lihat Lokasi</Button>
+                <Button style={{backgroundColor:"#8D7147",borderColor:"#fff",borderRadius:"20px",width:"auto"}}>Lihat Lokasi</Button>
                   </Card.Text>
                  
                 </Card>
           </Col>
 
           <Col
-                sm={8}
+                sm={6}
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
@@ -307,18 +311,19 @@ const Vin2 = () =>{
                 <p>Perum. Legenda Malaka Blok G4 No. 12A Batam Centre - Kota Batam</p>
                 <p>22 Desember 2022 11.00</p>
                 <p>Sampai Selesai</p>
-                <Button style={{backgroundColor:"#8D7147",borderColor:"#fff"}}>Lihat Lokasi</Button>
+                <Button style={{backgroundColor:"#8D7147",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>Lihat Lokasi</Button>
                   </Card.Text>
                  
                 </Card  >
                 
           </Col>
+          
           <Col
-                sm={4}
+                sm={6}
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{width:"500px"}}>
+                <Card  style={{width:"auto"}}>
                   <Card.Img src={require('../../image/vinlokasi.png')} >
                     
                   </Card.Img>
@@ -331,43 +336,45 @@ const Vin2 = () =>{
              
              
               </Row>
+              </Card>
               
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#444444",marginTop:"40px", marginLeft:"100px"}}>Map Lokasi</p>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#444444",marginTop:"40px"}}>Map Lokasi</p>
             
-             <img src={require('../../image/maps.png')} style={{width:"500px",position:"relative",marginLeft:"100px"}}/>
-             <p><Button style={{backgroundColor:"#8D7147",borderColor:"#fff",marginTop:"50px",marginLeft:"100px"}}>View Maps</Button></p>
-             
+             <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
+             <p><Button style={{backgroundColor:"#8D7147",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}}>View Maps</Button></p>
+            
+            
+            
+            
             </section>
-            
-            
-            </section>
-            <img src={require('../../image/vin6.png')} style={{width:"100%",position:"relative",zIndex:"1",marginTop:"500px"}}/>
-             <section style={{position:"absolute",zIndex:"2",top:"6030px",right:"350px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#000",marginTop:"170px"}}>Ampau Cashless</p>
+            <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"460px",marginTop:"50px"}}>
+             <section style={{marginTop:"50px"}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"70px",color:"#000",marginTop:"170px"}}>Ampau Cashless</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
-              <p style={{color:"#000"}}>Tanpa mengurangi rasa hormat , bagi anda yang ingin memberi tanda kasih untuk kami melalui</p>
-              <p style={{color:"#000"}}>Mandiri</p>
-              <p style={{color:"#000"}}>Yunita Andriani</p>
-              <p style={{color:"#000"}}>1020009931731</p>
-              <Button style={{backgroundColor:"#8D7147",borderColor:"#fff"}}>
+              <p style={{color:"#000",fontSize:"15px"}}>Tanpa mengurangi rasa hormat , bagi anda yang ingin memberi tanda kasih untuk kami melalui</p>
+              <p style={{color:"#000",fontSize:"15px"}}>Mandiri</p>
+              <p style={{color:"#000",fontSize:"15px"}}>Yunita Andriani</p>
+              <p style={{color:"#000",fontSize:"15px"}}>1020009931731</p>
+              <Button style={{backgroundColor:"#8D7147",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>
               Copy No. Rekening
               </Button>
-              <p style={{marginTop:"20px"}}><Button style={{backgroundColor:"#8D7147",borderColor:"#fff"}}>Konfirmasi Hadiah</Button></p>
+              <p style={{marginTop:"20px"}}><Button style={{backgroundColor:"#8D7147",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>Konfirmasi Hadiah</Button></p>
 
-              <Card style={{backgroundColor:"#fff",borderColor:"#8D7147",marginTop:"150px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#8D7147",marginTop:"40px", marginLeft:"100px"}}>Code  QR  Tamu</p>
-              <p><Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147"}}>Buka</Button></p>
+              <div style={{backgroundColor:"#fff",width:"auto",height:"500px",marginTop:"150px",}}>
+              <Card style={{backgroundColor:"#fff",borderColor:"#8D7147",marginTop:"150px",width:"auto",}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"60px",color:"#8D7147",marginTop:"40px", }}>Code  QR  Tamu</p>
+              <p><Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
               </Card>
-
+              </div>
               
               </section>
-              <img src={require('../../image/vin7.png')} style={{width:"100%",position:"relative",zIndex:"1",marginTop:"500px"}}/>
-              <section style={{position:"absolute",zIndex:"2",top:"7050px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#000",marginTop:"170px"}}>Protokol Kesehatan</p>
+              </div>
+              <Card style={{marginTop:"370px",backgroundColor:"#CCC0B0"}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#000"}}>Protokol Kesehatan</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               
 
-              <Row className="justify-content-md-center" >
+              <Row className="justify-content-md-center">
           <Col
                 sm={2}
                 className="card-tema"
@@ -386,7 +393,7 @@ const Vin2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20}}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol2.png')} style={{padding:"20px"}}>
@@ -401,7 +408,7 @@ const Vin2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20, }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol3.png')} style={{padding:"20px"}}>
@@ -416,7 +423,7 @@ const Vin2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20,  }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol4.png')} style={{padding:"20px"}}>
@@ -431,7 +438,7 @@ const Vin2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20,  }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol5.png')} style={{padding:"20px"}}>
@@ -445,9 +452,10 @@ const Vin2 = () =>{
           </Col>
         
           </Row>
+          </Card>
 <section style={{backgroundColor:"#fff"}}>
-          <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#000",marginTop:"40px",backgroundColor:'#fff'}}>Komentar</p>
-          <section style={{textAlign:"left",marginLeft:"100px",backgroundColor:"#fff"}}>
+          <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#000",marginTop:"40px",backgroundColor:'#fff'}}>Komentar</p>
+          <section style={{textAlign:"left",backgroundColor:"#fff"}}>
           <p><strong>Alan & Family</strong></p>
           Dear Yulian and Alfi, Congratulation on your sweet moment of togetherness, My god pour of you with his love endlesslyy. Were very sorry that we cant there for long due to the reason beyond our control. Put god as your leader on every move you both make. Be blessed amen
           <p>1 hour ago</p>
@@ -470,7 +478,7 @@ const Vin2 = () =>{
           
           </section>
           <img src={require('../../image/vin8.png')} style={{width:"100%",marginTop:"30px"}}/>
-              </section>
+             
                 </section>
      </section>
      
