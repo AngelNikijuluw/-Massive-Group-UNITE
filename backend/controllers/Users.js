@@ -1,4 +1,5 @@
 import Users from "../models/Usermodel.js";
+import Qrdata from "../models/Qrdata.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
@@ -24,6 +25,22 @@ export const Register = async(req, res)=> {
             name: name,
             email: email,
             password: hashPassword
+        });
+        res.json({msg: "req berhasil"});
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const Qrcode = async(req, res)=> {
+    const { name, email } = req.body;
+    
+ 
+    try {
+        await Qrdata.create({
+            name: name
+            
+           
         });
         res.json({msg: "req berhasil"});
     } catch (error) {

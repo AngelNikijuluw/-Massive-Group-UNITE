@@ -3,6 +3,10 @@ import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
+import {Fab, TextareaAutosize} from '@material-ui/core'
+import {ArrowBack} from '@material-ui/icons'
+import { Link } from "react-router-dom";
+import QrReader from 'react-web-qr-reader';
 
 
 function SignUp() {
@@ -11,6 +15,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
   const navigate = useNavigate();
+ 
 
   const SignUp = async(e) =>{
     e.preventDefault();
@@ -111,6 +116,7 @@ function SignUp() {
             </div>
            </form>
            </div>
+           
           </div>
       </Container>
     </Container>

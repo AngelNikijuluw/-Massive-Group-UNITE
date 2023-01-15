@@ -7,8 +7,11 @@ import {Fab, TextareaAutosize} from '@material-ui/core'
 import {ArrowBack} from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QrReader from 'react-web-qr-reader';
+import axios from "axios";
 
 function QRCode (){
+  let [bug, setbug] = useState('');
+  const [msg, setMsg] = useState('');
   const [result, setResult] = useState('No result');
   const handleScan = (result) => {
       if (result) {
@@ -22,9 +25,25 @@ function QRCode (){
   const hasil =JSON.parse(data);
 
 
-  const bug =(hasil.data);
+  bug =(hasil.data);
 
+  const SignUp = async(e) =>{
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:5000/qrcode',{
+        name: bug
+       
+        
+      });
 
+    } catch (error) {
+      if(error.response){
+        setMsg(error.response.data.msg);
+      }
+      
+    }
+
+  }
 
  
   
@@ -45,7 +64,8 @@ function QRCode (){
     </Card></Col>
         <Col md={{ span: 12, offset: 1 }}>
         <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
-        <div>
+        <form onSubmit={ SignUp }>
+           <div>
             <Link to="/">
             <Fab style={{marginRight:10}} color="primary">
                 <ArrowBack/>
@@ -63,16 +83,31 @@ function QRCode (){
                 />
             </div>
             </center>
-            <TextareaAutosize
-            style={{fontsize:18, width:320, hight:100, marginTop:300}}
-            defaultValue={bug}
-            value={bug}
+            
+                  
+                  <input
+                    type="text"
+                    class="form"
+                    style={{fontsize:18, width:320, hight:100, marginTop:300}}
+                    
+                    value={bug} onChange={(e)=> setbug(e.target.value)}
+                    required
+                  ></input>
+                  
+            
+           
 
-            />
+            
+                  <div class="action">
+              <button class="btn btn-secondary">
+                masuk
+              </button>
+            </div>
 
             
 
       </div>
+      </form>
         </Card>
         </Col>
     
