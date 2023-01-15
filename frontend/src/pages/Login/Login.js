@@ -3,6 +3,7 @@ import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
+import homeLogo from "../../Assets/gambarlogin.png";
 import foto from "../../Assets/foto.png";
 
 function Login() {
@@ -38,40 +39,51 @@ function Login() {
       <Container>
             <div className="warp d-md-flex" style={{}}>
              <Col
-                md={8}
+                md={6}
               >
+
                 <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{ maxHeight: "800px" }}
+                />
+              </Col>
+                {/* <img
                   src={'https://medinacatering.id/wp-content/uploads/2020/02/4-Wedding-Venue-Pilihan-di-Jakarta-Selatan.jpg'}
                   alt="home pic"
                   style={{width:"100%" }}
                 />
-              </Col>
+              </Col> */}
               <div class="login-form">
+             
                    <form onSubmit={ Auth }>
                      <h1>Login</h1>
                      <p className="has-text-centered">{msg}</p>
                        <div class="content">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-15 mb-3">
                            <label
                             style={{ textAlign: "justify" }}
                   for="validationCustom01"
                 >
-                  Email
+                  {/* Email */}
                   <input
                     type="text"
                     class="form"
+                    placeholder="Email"
                     value={email} onChange={(e)=> setEmail(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-15 mb-3">
                 <label style={{ textAlign: "left" }} for="validationCustom01">
-                  Password
+                  {/* Password */}
                   <input
                     type="password"
                     class="form"
+                    placeholder="Password"
                     value={password} onChange={(e)=> setPassword(e.target.value)}
                     required
                   ></input>
@@ -81,22 +93,31 @@ function Login() {
             </div>
             <div class="action">
               <button class="btn btn-secondary">
-                Masuk
+                Login
               </button>
             </div>
+
+            <div>
+              <p>
+                Belum Memiliki Akun? Silahkan<a href="/SignUp">Registrasi</a>.
+              </p>
+            </div>
+
+
             <div class="google">
               <button>
                 <a href="/">
                 </a>
-                Login dengan Google
+                Masuk dengan Google
               </button>
             </div>
-            <div>
+            {/* <div>
               <p>
                 Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
               </p>
-            </div>
+            </div> */}
            </form>
+
            </div>
           </div>
       </Container>

@@ -746,8 +746,9 @@ button {
 
 .login-form h1 {
   padding: 35px 35px 0 35px;
-  font-weight: 300;
-  font-family: cursive
+  font-weight: bold;
+  
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
 }
 
 .login-form .content {
@@ -808,23 +809,26 @@ button {
 .login-form .action {
   display: -webkit-box;
   display: flex;
+  
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
 }
 
 .login-form .action button {
-  width: 100px;
-  border: none;
+  width: 360px;
+  border: 1px solid rgb(168, 162, 162);
   padding: 12px;
-  margin-left: 170px;
+  margin-left: 100px;
+  margin-bottom: 8px;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
-  background: #434C77;
+  background: #447294;
   color: white;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 0;
-  letter-spacing: 0.2px;
+  border-radius: 25px;
+  /* border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0; */
+  /* letter-spacing: 0.2px; */
   outline: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -847,11 +851,15 @@ button {
 }
 
 .login-form .google button {
-  margin-left: 120px;
-  width: 50%;
-  margin-top: 20px;
+  margin-left: 100px;
+  width: 360px;
+  justify-content: center;
+  margin-top: 60px;
+  border-radius: 16px;
   margin-bottom: 20px;
-  background-color: #000;
+  color: #000;
+  border: 1px solid rgb(168, 162, 162);
+  background-color: #fff;
 }
 
 /* --------- */
@@ -899,6 +907,8 @@ button {
   padding: 0.375rem 00.75rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+  justify-content: center;
+  width: 360px;
 }
 
 .form:focus {
