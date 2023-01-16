@@ -16,26 +16,27 @@ const Vin2 = () =>{
      <section>
      <Button style={{borderColor:"#FFA8BA",backgroundColor:"#8D7147",color:"#fff",zIndex:"10",position:"absolute",top:"10px",borderRadius:"20px",color:"white",borderColor:"white",right:"10px",width:"auto"}}><AiFillPlayCircle/><span style={{margin:"20px"}}>Play Music</span></Button>
             
-            <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"650px"}}>
-            <table style={{zIndex:"2",position:"absolute",color:"#000"}}>
-              <tr>
-                <p>Assalamu'alaikum warahmatullahi wabarakatuh</p>
-                <p >Bismillahirrahmanirrahim</p>
+            <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"550px"}}>
+            <Row style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"20px"}}>
+              
+            <Col sm={12} >Assalamu'alaikum warahmatullahi wabarakatuh</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Bismillahirrahmanirrahim</Col>
                 
-                <p>Seraya menengadahkan jemari bermunajat dalam hamparan kasih ilahi,menyatukan langkah putra dan putri kami,untuk mengikuti sunnah Rasul-Mu membentuk keluarga Sakinah,Mawadah,Warahmah maka izinkanlah kami menikahkan mereka</p>
-                <p>Ananda Alfian</p>
-                <p>Putra Bungsu dari Bapak Hanafiah & Ibu Satifah</p>
-                <p>Dengan</p>
-                <p>Yunita Andriani</p>
-                <p>Putri Sulung Bapak Syaiful & Ibu Yuliana</p>
-              </tr>
-              <Row style={{marginTop:"50px"}}>
+                <Col sm={12} style={{marginTop:"5px"}}>Seraya menengadahkan jemari bermunajat dalam hamparan kasih ilahi,menyatukan langkah putra dan putri kami,untuk mengikuti sunnah Rasul-Mu membentuk keluarga Sakinah,Mawadah,Warahmah maka izinkanlah kami menikahkan mereka</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Ananda Alfian</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Putra Bungsu dari Bapak Hanafiah & Ibu Satifah</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Dengan</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Yunita Andriani</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Putri Sulung Bapak Syaiful & Ibu Yuliana</Col>
+              
+              
+              <Row style={{marginTop:"30px"}}>
                 <Col style={{margin:"20px"}}>
                 <Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
                 <Col style={{margin:"20px"}}>
                 <Button style={{borderColor:"#8D7147",backgroundColor:"#CCC0B0",color:"#8D7147",borderRadius:"15px"}}>Hadir</Button></Col>
               </Row>
-            </table>
+            </Row>
           </div>
         
             <section>
@@ -105,7 +106,7 @@ const Vin2 = () =>{
           <Row>
           <p  style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"50px"}}>Qs Ar-Rum 21</p>
           
-          <p style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"150px"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
+          <p style={{color:"#000",marginTop:"150px"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
           </Row>
            </div>
           <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#2B292A"}}>Galery</p>

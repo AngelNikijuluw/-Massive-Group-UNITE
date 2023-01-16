@@ -10,33 +10,36 @@ import Footer from '../../components/Footer';
 const Sakura2 = () =>{
     return (
         
-      <section >
+      <section style={{backgroundColor:"#fff"}}>
      <img src={require('../../image/sakura2.png')} style={{width:"100%",}}/>
      
      <section>
-     <Button style={{borderColor:"#FFA8BA",backgroundColor:"#FFE8D8",color:"#F2B5B5",zIndex:"10",position:"absolute",top:"10px",borderRadius:"20px",color:"white",borderColor:"white",right:"10px"}}><AiFillPlayCircle/>Play Music</Button>
-     <img src={require('../../image/sakura3.png')}  style={{backgroundSize: "cover",width:"100%",zIndex:"1",position:"relative"}}/>
-            <table style={{zIndex:"2",position:"absolute",top:"900px"}}>
-              <tr>
-                <p>Assalamu'alaikum warahmatullahi wabarakatuh</p>
-                <p >Bismillahirrahmanirrahim</p>
+     <Button style={{borderColor:"#FFF",backgroundColor:"#DDBABB",color:"#fff",zIndex:"10",position:"absolute",top:"10px",borderRadius:"20px",color:"white",borderColor:"white",right:"10px",width:"auto"}}><AiFillPlayCircle/><span style={{margin:"20px"}}>Play Music</span></Button>
+            
+            <div style={{backgroundColor:"#FFDAD8",width:"auto",height:"560px"}}>
+            <Row style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"50px"}}>
+              
+                <Col sm={12} >Assalamu'alaikum warahmatullahi wabarakatuh</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Bismillahirrahmanirrahim</Col>
                 
-                <p>Seraya menengadahkan jemari bermunajat dalam hamparan kasih ilahi,menyatukan langkah putra dan putri kami,untuk mengikuti sunnah Rasul-Mu membentuk keluarga Sakinah,Mawadah,Warahmah maka izinkanlah kami menikahkan mereka</p>
-                <p>Ananda Alfian</p>
-                <p>Putra Bungsu dari Bapak Hanafiah & Ibu Satifah</p>
-                <p>Dengan</p>
-                <p>Yunita Andriani</p>
-                <p>Putri Sulung Bapak Syaiful & Ibu Yuliana</p>
-              </tr>
-              <Row style={{marginTop:"50px"}}>
-                <Col>
-                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>Hadir</Button></Col>
-                <Col>
-                <Button style={{borderColor:"#FFA8BA",backgroundColor:"#FFE8D8",color:"#F144AC"}}>Hadir</Button></Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Seraya menengadahkan jemari bermunajat dalam hamparan kasih ilahi,menyatukan langkah putra dan putri kami,untuk mengikuti sunnah Rasul-Mu membentuk keluarga Sakinah,Mawadah,Warahmah maka izinkanlah kami menikahkan mereka</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Ananda Alfian</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Putra Bungsu dari Bapak Hanafiah & Ibu Satifah</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Dengan</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Yunita Andriani</Col>
+                <Col sm={12} style={{marginTop:"5px"}}>Putri Sulung Bapak Syaiful & Ibu Yuliana</Col>
+              
+              <Row style={{marginTop:"20px"}}>
+                <Col style={{margin:"10px"}}>
+                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
+                <Col style={{margin:"10px"}}>
+                <Button style={{borderColor:"#F144AC",backgroundColor:"#FFDAD8",color:"#F144AC",borderRadius:"15px"}}>Hadir</Button></Col>
               </Row>
-            </table>
+            </Row>
+          </div>
+        
             <section>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC"}}>Penyelenggara</p>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC"}}>Penyelenggara</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               
               <Row className="justify-content-md-center">
@@ -45,18 +48,18 @@ const Sakura2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card className="card-tema" style={{borderRadius:"15px",backgroundColor:"#FFA8BA"}}>
+                <Card className="card-tema" style={{borderRadius:"15px",backgroundColor:"#FBC5D0"}}>
                   <Card.Img  src={require('../../image/putri.png')} style={{padding:"20px"}}>
                     
                   </Card.Img>
                  <div>
-                  <p style={{fontFamily:"Caveat",fontSize:"30px"}}>Yunita Andriani</p>
+                  <p style={{fontFamily:"Caveat",fontSize:"30px",color:"#2B292A"}}>Yunita Andriani</p>
               <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"></link>
                  </div>
                 </Card>
-                <p>Putri</p>
-                <p>Bapak Syaiful & Ibu Yuliana</p>
-                <Button style={{backgroundColor:"#F971C2",borderColor:"#FFA8BA",borderRadius:"20px"}}>
+                <p style={{color:"#2B292A",fontFamily:"Copse"}}>Putri</p>
+                <p style={{color:"#2B292A",fontFamily:"Copse"}}>Bapak Syaiful & Ibu Yuliana</p>
+                <Button style={{backgroundColor:"#FBC5D0",borderColor:"#FFA8BA",borderRadius:"20px"}}>
                 <a
                 href="."
                 style={{ color: "white" }}
@@ -73,18 +76,19 @@ const Sakura2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{borderRadius:"15px",backgroundColor:"#FFA8BA"}}>
+                <Card  style={{borderRadius:"15px",backgroundColor:"#FBC5D0"}}>
                   <Card.Img src={require('../../image/putra.png')} style={{padding:"20px"}}>
                     
                   </Card.Img>
                  <div>
-                 <p style={{fontFamily:"Caveat",fontSize:"30px"}}>Ananda Alfian</p>
+                 <p style={{fontFamily:"Caveat",fontSize:"30px",color:"#2B292A"}}>Ananda Alfian</p>
               <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"></link>
                  </div>
                 </Card>
-                <p>Putra</p>
-                <p>Bapak Hanafiah & Ibu Satifah</p>
-                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA",borderRadius:"20px"}}>
+                <p style={{color:"#2B292A",fontFamily:"Copse"}}>Putra</p>
+                <p style={{color:"#2B292A",fontFamily:"Copse"}}>Bapak Hanafiah & Ibu Satifah</p>
+                <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet"></link>
+                <Button style={{backgroundColor:"#FBC5D0",borderColor:"#FFA8BA",borderRadius:"20px"}}>
                 <a
                 href="."
                 style={{ color: "white" }}
@@ -95,15 +99,16 @@ const Sakura2 = () =>{
               </a>
                   Visit Instagram</Button>
           </Col>
-
-        
-          </Row>
-          <p style={{zIndex:"2",position:"absolute",right:"630px",top:"2560px"}}>Qs Ar-Rum 21</p>
-          <img src={require('../../image/sakura4.png')} style={{width:"100%",position:"relative",zIndex:"1"}}/>
           
-          <p style={{zIndex:"2",position:"absolute",top:"2500px"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
-           
-          <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC"}}>Galery</p>
+          </Row>
+          <div style={{backgroundColor:"#FFDAD8",width:"auto",height:"350px",marginTop:"50px"}}>
+          <Row>
+          <p  style={{zIndex:"2",position:"absolute",color:"#000",marginTop:"50px"}}>Qs Ar-Rum 21</p>
+          
+          <p style={{color:"#000",marginTop:"150px"}}>“Dan diantara tanda-tanda (kebesarann)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tentram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang”</p>
+          </Row>
+           </div>
+          <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC"}}>Galery</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
             </section>
             <Row className="justify-content-md-center">
@@ -255,10 +260,10 @@ const Sakura2 = () =>{
                 </Card>
           </Col>
             </Row>
-            <img src={require('../../image/sakura5.png')} style={{width:"100%",position:"relative",zIndex:"1"}}/>
-            <section style={{position:"absolute",zIndex:"2",top:"4500px",right:"100px"}}>
-            <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",}}>Lokasi</p>
+           
+            <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC"}}>Lokasi</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
+              <Card style={{backgroundColor:"#FFDAD8",width:"auto ",marginTop:"50px"}}>
               <Row>
                 
 
@@ -267,7 +272,7 @@ const Sakura2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{width:"500px"}}>
+                <Card style={{width:"auto"}}>
                   <Card.Img src={require('../../image/sakuralokasi.png')}  >
                     
                   </Card.Img>
@@ -279,7 +284,7 @@ const Sakura2 = () =>{
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0"}}>
+                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0",color:"#000"}}>
                   <Card.Text style={{textAlign:"center",fontSize:"15px"}} >
                   <p>Kota Batam</p>
                 <p style={{fontFamily:"Corinthia",fontSize:"50px"}}>Akad Nikah</p>
@@ -287,18 +292,18 @@ const Sakura2 = () =>{
                 <p>Perum. Legenda Malaka Blok G4 No. 12A Batam Centre - Kota Batam</p>
                 <p>22 Desember 2022 09.00</p>
                 <p>Sampai Selesai</p>
-                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>Lihat Lokasi</Button>
+                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",borderRadius:"20px",width:"auto"}}>Lihat Lokasi</Button>
                   </Card.Text>
                  
                 </Card>
           </Col>
 
           <Col
-                sm={8}
+                sm={6}
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0"}}>
+                <Card  style={{backgroundColor:"rgba(0, 0, 0, 0.0",borderColor:"rgba(0, 0, 0, 0.0",color:"#000"}}>
                   <Card.Text style={{textAlign:"center",fontSize:"15px"}} >
                   <p>Kota Batam</p>
                 <p style={{fontFamily:"Corinthia",fontSize:"50px"}}>Resepsi</p>
@@ -306,18 +311,19 @@ const Sakura2 = () =>{
                 <p>Perum. Legenda Malaka Blok G4 No. 12A Batam Centre - Kota Batam</p>
                 <p>22 Desember 2022 11.00</p>
                 <p>Sampai Selesai</p>
-                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>Lihat Lokasi</Button>
+                <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>Lihat Lokasi</Button>
                   </Card.Text>
                  
                 </Card  >
                 
           </Col>
+          
           <Col
-                sm={4}
+                sm={6}
                 className="card-tema"
                 style={{ paddingBottom: 20, paddingTop: 50 }}
               >
-                <Card  style={{width:"500px"}}>
+                <Card  style={{width:"auto"}}>
                   <Card.Img src={require('../../image/sakuralokasi.png')} >
                     
                   </Card.Img>
@@ -330,43 +336,45 @@ const Sakura2 = () =>{
              
              
               </Row>
+              </Card>
               
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",marginTop:"40px", marginLeft:"100px"}}>Map Lokasi</p>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC",marginTop:"40px"}}>Map Lokasi</p>
             
-             <img src={require('../../image/maps.png')} style={{width:"500px",position:"relative",marginLeft:"100px"}}/>
-             <p><Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA",marginTop:"50px",marginLeft:"100px"}}>View Maps</Button></p>
-             
+             <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
+             <p><Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}}>View Maps</Button></p>
+            
+            
+            
+            
             </section>
-            
-            
-            </section>
-            <img src={require('../../image/sakura6.png')} style={{width:"100%",position:"relative",zIndex:"1",marginTop:"500px"}}/>
-             <section style={{position:"absolute",zIndex:"2",top:"6030px",right:"350px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",marginTop:"40px"}}>Ampau Cashless</p>
+            <div style={{backgroundColor:"#FFDAD8",width:"auto",height:"460px",marginTop:"50px"}}>
+             <section style={{marginTop:"50px"}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"70px",color:"#F144AC",marginTop:"170px"}}>Ampau Cashless</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
-              <p>Tanpa mengurangi rasa hormat , bagi anda yang ingin memberi tanda kasih untuk kami melalui</p>
-              <p>Mandiri</p>
-              <p>Yunita Andriani</p>
-              <p>1020009931731</p>
-              <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>
+              <p style={{color:"#000",fontSize:"15px"}}>Tanpa mengurangi rasa hormat , bagi anda yang ingin memberi tanda kasih untuk kami melalui</p>
+              <p style={{color:"#000",fontSize:"15px"}}>Mandiri</p>
+              <p style={{color:"#000",fontSize:"15px"}}>Yunita Andriani</p>
+              <p style={{color:"#000",fontSize:"15px"}}>1020009931731</p>
+              <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>
               Copy No. Rekening
               </Button>
-              <p style={{marginTop:"20px"}}><Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>Konfirmasi Hadiah</Button></p>
+              <p style={{marginTop:"20px"}}><Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",borderRadius:"15px",width:"auto"}}>Konfirmasi Hadiah</Button></p>
 
-              <Card style={{backgroundColor:"#EBEEFB",borderColor:"#F144AC",marginTop:"50px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",marginTop:"40px", marginLeft:"100px"}}>Code  QR  Tamu</p>
-              <p><Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA"}}>Buka</Button></p>
+              <div style={{backgroundColor:"#fff",width:"auto",height:"500px",marginTop:"150px",}}>
+              <Card style={{backgroundColor:"#fff",borderColor:"#FFA8BA",marginTop:"150px",width:"auto",}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"60px",color:"#F144AC",marginTop:"40px", }}>Code  QR  Tamu</p>
+              <p><Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
               </Card>
-
+              </div>
               
               </section>
-              <img src={require('../../image/sakura6.png')} style={{width:"100%",position:"relative",zIndex:"1",marginTop:"500px"}}/>
-              <section style={{position:"absolute",zIndex:"2",top:"7050px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",marginTop:"40px"}}>Protokol Kesehatan</p>
+              </div>
+              <Card style={{marginTop:"370px",backgroundColor:"#FFDAD8"}}>
+              <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC"}}>Protokol Kesehatan</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               
 
-              <Row className="justify-content-md-center" >
+              <Row className="justify-content-md-center">
           <Col
                 sm={2}
                 className="card-tema"
@@ -385,7 +393,7 @@ const Sakura2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20}}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol2.png')} style={{padding:"20px"}}>
@@ -400,7 +408,7 @@ const Sakura2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20, }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol3.png')} style={{padding:"20px"}}>
@@ -415,7 +423,7 @@ const Sakura2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20,  }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol4.png')} style={{padding:"20px"}}>
@@ -430,7 +438,7 @@ const Sakura2 = () =>{
           <Col
                 sm={2}
                 className="card-tema"
-                style={{ paddingBottom: 20,  marginLeft:"10px"}}
+                style={{ paddingBottom: 20,  }}
               >
                 <Card  style={{borderRadius:"15px",backgroundColor:"#fff",width:"130px"}}>
                   <Card.Img src={require('../../image/protokol5.png')} style={{padding:"20px"}}>
@@ -444,9 +452,10 @@ const Sakura2 = () =>{
           </Col>
         
           </Row>
-
-          <p style={{fontFamily:"Corinthia",fontSize:"100px",color:"#F144AC",marginTop:"40px"}}>Komentar</p>
-          <section style={{textAlign:"left",marginLeft:"100px"}}>
+          </Card>
+<section style={{backgroundColor:"#fff"}}>
+          <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC",marginTop:"40px",backgroundColor:'#fff'}}>Komentar</p>
+          <section style={{textAlign:"left",backgroundColor:"#fff"}}>
           <p><strong>Alan & Family</strong></p>
           Dear Yulian and Alfi, Congratulation on your sweet moment of togetherness, My god pour of you with his love endlesslyy. Were very sorry that we cant there for long due to the reason beyond our control. Put god as your leader on every move you both make. Be blessed amen
           <p>1 hour ago</p>
@@ -459,19 +468,18 @@ const Sakura2 = () =>{
           Dear Yulian and Alfi, Congratulation on your sweet moment of togetherness, My god pour of you with his love endlesslyy. Were very sorry that we cant there for long due to the reason beyond our control. Put god as your leader on every move you both make. Be blessed amen
           <p>1 hour ago</p>
 
-          <h1 style={{textAlign:"center",color:"#816C4D"}}>Berikan Ucapan</h1>
+          <h1 style={{textAlign:"center",color:"#FFA8BA"}}>Berikan Ucapan</h1>
           <Form style={{textAlign:"center"}}>
             <input placeholder='Name' type="text"></input>
             <br></br>
             <input placeholder='Ucapan & Doa' style={{height:"60px",marginTop:"30px",backgrounColor:"#FFA8BA"}}type="text"></input>
           <br></br>
-          <Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA",marginTop:"30px",borderRadius:"20px"}}>Kirim</Button></Form>
+          <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",marginTop:"30px",borderRadius:"20px"}}>Kirim</Button></Form>
           
           </section>
           <img src={require('../../image/sakura7.png')} style={{width:"100%",marginTop:"30px"}}/>
-              </section>
-              <Container fluid className="footer">
-                </Container>
+             
+                </section>
      </section>
      
       );
