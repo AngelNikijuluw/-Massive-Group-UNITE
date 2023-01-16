@@ -1,9 +1,14 @@
 import Sidebar from "../../components/Sidebar";
-import {Card, Container, Row, Col, Form, Table} from "react-bootstrap";
+import {Card, Container, Row, Col, Form, Table, Button} from "react-bootstrap";
 import TopBAr from '../../components/TopBar';
 import axios from 'axios';
 import jwt_decode from "jwt-decode";
 import React, { useState, useEffect } from 'react';
+import tema from "../../Assets/tema.png";
+import tema1 from "../../Assets/tema1.png";
+import tema2 from "../../Assets/tema2.png";
+import { Link } from "react-router-dom";
+
 
 const BuatUndangan = () =>{
 
@@ -159,7 +164,7 @@ const BuatUndangan = () =>{
             <h6 style={{textAlign:"left", paddingLeft:40}}>Data Tamu</h6>
             <br></br>
             
-            <Table striped bordered hover style={{width:"90%"}}>
+            <Table striped bordered hover style={{width:"100%"}}>
       <thead>
         <tr>
           <th>No</th>
@@ -190,9 +195,70 @@ const BuatUndangan = () =>{
       </tbody>
     </Table>
         </Form>
+        
+        <strong>
+        <p style={{marginTop:"50px"}}>SILAHKAN PILIH TEMA PERNIKAHAN</p>
+        </strong>
+        <p>Berbagai tema sudah kami sediakan. Pilih tema pernikahan yang kamu inginkan</p>
+        <Row >
+        <h1 className="fitur" style={{textAlign:"left",fontSize:"25px"}}>Tema</h1>
+          <Col
+                sm={4}
+                className="card-tema"
+                style={{ paddingBottom: 20, paddingTop: 50 }}
+              >
+                <Card className="card-tema" style={{borderRadius:"15px"}}>
+                  <Card.Img src={tema} alt="img">
+                    
+                  </Card.Img>
+                 <div>
+                 <Link to="/Vin">
+                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderRadius:"15px",width:"150px"}}>Preview</Button>
+                 </Link>
+                 </div>
+                </Card>
+                <h1>Vintage</h1>
+                
+          </Col>
+          <Col
+                sm={4}
+                className="card-tema"
+                style={{ paddingBottom: 20, paddingTop: 50 }}
+              >
+                <Card  style={{borderRadius:"15px"}}>
+                  <Card.Img src={tema1} alt="img">
+                    
+                  </Card.Img>
+                 <div>
+                 <Link to="/Sakura">
+                 <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderRadius:"15px",width:"150px"}}>Preview</Button>
+                  </Link>
+                 </div>
+                </Card>
+                <h1>Sakura</h1>
+          </Col>
 
-</Container>
-
+          <Col
+                sm={4}
+                className="card-tema"
+                style={{ paddingBottom: 20, paddingTop: 50 }}
+              >
+                <Card  style={{borderRadius:"15px"}}>
+                  <Card.Img src={tema2} alt="img">
+                    
+                  </Card.Img>
+                 <div>
+                 <Link to="/BW">
+                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderRadius:"15px",width:"150px"}}>Preview</Button>
+                  </Link>
+                 </div>
+                </Card>
+                <h1>B&W Theme</h1>
+          </Col>
+          </Row>
+          <Button style={{backgroundColor:"#447294",width:"500px",marginBottom:"50px"}}>Menyimpan</Button>
+      </Container>
+      
 
     </Row>
     </Container>
