@@ -718,7 +718,7 @@ h3 {
 }
 
 button {
-  color: rgb(255, 255, 255);
+  color: black;
   border: 0;
   border-radius: 5px;
   height: 40px;
@@ -936,4 +936,5 @@ button {
   justify-content: center;
 
 }
+
 

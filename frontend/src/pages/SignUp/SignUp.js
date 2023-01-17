@@ -38,7 +38,7 @@ function SignUp() {
 
 
   return (
-    <Layout title="UNI Vitation | Login">
+    <Layout title="UNI Vitation | SignUp">
     <Container fluid className="home-about-section" id="about">
       <Container>
       <div className="warp d-md-flex" style={{}}>

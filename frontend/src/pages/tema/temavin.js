@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+import CountdownTimer from "./CountdownTimer.js";
 const Vin = () =>{
     return (
         
@@ -22,10 +24,11 @@ const Vin = () =>{
         
         <Link to="/Vin2">
             <Button style={{borderColor:"#000",backgroundColor:"#8D7147",color:"#fff",width:"auto"}}>Buka Undangan</Button>
+            <CountdownTimer />
             </Link>
         </Col>
-        
       </Card.ImgOverlay>
+      
       
                 
               </Row>
