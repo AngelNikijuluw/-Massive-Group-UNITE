@@ -33,12 +33,10 @@ const BuatUndangan = () =>{
     return (
       <section><TopBAr />
        <Sidebar />
-        <Container >
-          
-         
-          
+       <Container >
+       <Container style={{margin:"50px",marginTop:"0"}}>
         <Row 
-        style={{ paddingLeft:300, paddingTop:60, paddingRight: 50 }}>
+        style={{ paddingTop:60,width:"auto"}}>
         <Container fluid className="home-section" >
         <h1>HALO, {name}</h1>
         <h1>SELAMAT DATANG DI </h1>
@@ -261,6 +259,7 @@ const BuatUndangan = () =>{
       
 
     </Row>
+    </Container>
     </Container>
     </section>
     );

@@ -23,7 +23,7 @@ function Home5() {
                   </Card.Img>
                  <div>
                  <Link to="/Vin">
-                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderColor:"#447294",borderRadius:"20px"}}>Preview</Button>
                  </Link>
                  </div>
                 </Card>
@@ -41,7 +41,7 @@ function Home5() {
                   </Card.Img>
                  <div>
                  <Link to="/Sakura">
-                 <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                 <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderColor:"#447294",borderRadius:"20px"}}>Preview</Button>
                   </Link>
                  </div>
                 </Card>
@@ -59,7 +59,7 @@ function Home5() {
                   </Card.Img>
                  <div>
                  <Link to="/BW">
-                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right"}}>Preview</Button>
+                  <Button style={{marginBottom:"30px",marginTop:"30px",float:"right",backgroundColor:"#447294",borderColor:"#447294",borderRadius:"20px"}}>Preview</Button>
                   </Link>
                  </div>
                 </Card>

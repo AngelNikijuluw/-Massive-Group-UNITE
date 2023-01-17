@@ -7,7 +7,8 @@ import {Fab, TextareaAutosize} from '@material-ui/core'
 import {ArrowBack} from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QrReader from 'react-web-qr-reader';
-
+import homeLogo from "../../Assets/gambarlogin.png";
+import {FcGoogle}from "react-icons/fc";
 
 function SignUp() {
   const [name, setName] = useState('');
@@ -42,13 +43,19 @@ function SignUp() {
       <Container>
       <div className="warp d-md-flex" style={{}}>
      
+      <Col
+                sm={5}
+              >
+
                 <img
-                  src={'https://medinacatering.id/wp-content/uploads/2020/02/4-Wedding-Venue-Pilihan-di-Jakarta-Selatan.jpg'}
+                  src={homeLogo}
                   alt="home pic"
-                  style={{width:"100%"}}
+                  className="img-fluid"
+                  style={{ height:"700px"}}
                 />
+              </Col>
        
-              <div class="login-form">
+              <div class="login-form" >
                    <form onSubmit={ SignUp }>
                      <h1>SignUp</h1>
                      <p className="has-text-centered">{msg}</p>
@@ -98,17 +105,24 @@ function SignUp() {
                   <div class="valid-feedback">Look</div>
                 </label>
               </div>
-            </div>
-            <div class="action">
+              <div class="action">
               <button class="btn btn-secondary">
                 Daftar
               </button>
+              
             </div>
             <div class="google">
               <button>
+              <FcGoogle/>
+                <a style={{marginLeft:"20px"}} href="/">
+                </a>
                 SignUp dengan Google
+                
               </button>
             </div>
+            </div>
+            
+            
             <div>
               <p>
                 Sudah Memiliki Akun ? <a href="/Login">Masuk</a>.
