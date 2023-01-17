@@ -10,9 +10,11 @@ import QrReader from 'react-web-qr-reader';
 import axios from "axios";
 
 function QRCode (){
-  let [bug, setbug] = useState('');
+  let [qrdata, setQrdata] = useState('');
+  const [email, setEmail] = useState('');
+  const [hadir, setHadir] = useState('Hadir');
   const [msg, setMsg] = useState('');
-  const [result, setResult] = useState('No result');
+  const [result, setResult] = useState('');
   const handleScan = (result) => {
       if (result) {
           setResult(result)
@@ -25,15 +27,17 @@ function QRCode (){
   const hasil =JSON.parse(data);
 
 
-  bug =(hasil.data);
+  qrdata =(hasil.data);
+  
+
 
   const SignUp = async(e) =>{
     e.preventDefault();
     try {
       await axios.post('http://localhost:5000/qrcode',{
-        name: bug
-       
-        
+        name: qrdata,
+        email: hadir
+      
       });
 
     } catch (error) {
@@ -83,29 +87,19 @@ function QRCode (){
                 />
             </div>
             </center>
-            
-                  
                   <input
                     type="text"
                     class="form"
                     style={{fontsize:18, width:320, hight:100, marginTop:300}}
                     
-                    value={bug} onChange={(e)=> setbug(e.target.value)}
+                    value={qrdata} onChange={(e)=> setQrdata(e.target.value)}
                     required
                   ></input>
-                  
-            
-           
-
-            
                   <div class="action">
               <button class="btn btn-secondary">
-                masuk
+                Masuk
               </button>
             </div>
-
-            
-
       </div>
       </form>
         </Card>

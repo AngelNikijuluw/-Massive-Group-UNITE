@@ -25,7 +25,7 @@ function SignUp() {
         email: email,
         password: password
       });
-     navigate("/login")
+     navigate("/login");
     } catch (error) {
       if(error.response){
         setMsg(error.response.data.msg);

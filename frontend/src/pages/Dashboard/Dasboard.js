@@ -11,15 +11,37 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
 import jwt_decode from "jwt-decode";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Dashboard =() =>{
-  const [value, onChange]  = useState(new Date());;
+    const [name, setName] = useState('');
+    const [token, setToken] = useState('');
+    const [expire, setExpire] = useState('');
+    const navigate = useNavigate();
+    const [value, onChange]  = useState(new Date());;
+
+    useEffect(() =>{
+      refreshToken();
+
+    },[]);
+
+  const refreshToken = async() => {
+    try {
+      const response = await axios.get('http://localhost:5000/token');
+      setToken(response.data.accessToken);
+      const decode = jwt_decode(response.data.accessToken);
+      setName(decode.name);
+      setExpire(decode.exp);
+    } catch (error) {
+      if(error.response){
+        navigate("/login");
+      }
+      
+    }
+  }
   
   return (
-    
-
     <div  style={{backgroundColor:"#EEF1FF"}}>
       
         <TopBar/>

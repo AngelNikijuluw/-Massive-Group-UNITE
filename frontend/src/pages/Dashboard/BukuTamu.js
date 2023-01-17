@@ -1,10 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from '../../components/Sidebar';
 import TopBAr from '../../components/TopBar';
 import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
 import {BsPlusCircle}  from "react-icons/bs";
+import axios from 'axios';
+import jwt_decode from "jwt-decode";
+import { useNavigate } from "react-router-dom";
+
 
 const BukuTamu = () =>{
+  const [token, setToken] = useState('');
+  const [qrdata, setqrdata] = useState([]);
+  const [name, setName] = useState('');
+  const [expire, setExpire] = useState('');
+  const navigate = useNavigate();
+  const [value, onChange]  = useState(new Date());;
+
+  useEffect(() =>{
+    refreshToken();
+    getqrdata();
+
+  },[]);
+
+  const refreshToken = async() => {
+    try {
+      const response = await axios.get('http://localhost:5000/tokenqr');
+      setToken(response.data.accessToken);
+      const decoded = jwt_decode(response.data.accessToken);
+      setName(decoded.name);
+      setExpire(decoded.exp);
+    } catch (error) {
+      if(error.response){
+        navigate("/login");
+      }
+      
+    }
+  }
+
+  const getqrdata = async () => {
+    const response = await axios.get('http://localhost:5000/qrcode', {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    console.log(response.data);
+    setqrdata(response.data);
+  }
+
     return (
         <div  style={{backgroundColor:"#EEF1FF"}}>
             <TopBAr/>
@@ -32,14 +74,27 @@ const BukuTamu = () =>{
         <thead>
       <tr>
           <th>NO</th>
-          <th>Nama</th>
+          <th>Link QR</th>
           <th>Status</th>
-          <th>Alasan Kamu</th>
-          <th>Total Tamu</th>
+          <th>Waktu</th>
+         
           </tr>
-          
           </thead>
+          <tbody>
+            {qrdata.map((user, index) =>(
+              <tr key={user.id}>
+                <td>{index + 1}</td>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+                <td>{user.createdAt}</td>
+              </tr>
+            ))}
+            <tr>
+
+            </tr>
+          </tbody>
           </Table>
+          <Button onClick={getqrdata}>Buka Data Tamu</Button>
         </Card.Text>
       </Card.Body>
     </Card></Col>

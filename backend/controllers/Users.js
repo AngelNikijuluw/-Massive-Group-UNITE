@@ -5,8 +5,8 @@ import jwt from "jsonwebtoken";
 
 export const getUsers = async(req, res) => {
     try {
-        const users = await Users.findAll({
-            attributes:['id','name','email']
+        const users = await Qrdata.findAll({
+            attributes:['id','name','email','createdAt']
         });
         res.json(users);
     } catch (error) {
@@ -38,7 +38,8 @@ export const Qrcode = async(req, res)=> {
  
     try {
         await Qrdata.create({
-            name: name
+            name: name,
+            email: email
             
            
         });

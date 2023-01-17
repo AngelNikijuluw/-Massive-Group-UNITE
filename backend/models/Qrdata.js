@@ -7,8 +7,9 @@ const Qrdata = db.define('qrcode',{
     name:{
         type: DataTypes.STRING
     },
-    
-    
+    email:{
+        type: DataTypes.STRING
+    }
 },{
     freezeTableName:true
     
