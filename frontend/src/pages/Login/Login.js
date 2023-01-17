@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
 import homeLogo from "../../Assets/gambarlogin.png";
 import foto from "../../Assets/foto.png";
+import {FcGoogle}from "react-icons/fc";
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -39,7 +40,7 @@ function Login() {
       <Container>
             <div className="warp d-md-flex" style={{}}>
              <Col
-                md={6}
+                sm={5}
               >
 
                 <img
@@ -89,35 +90,40 @@ function Login() {
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
-              </div>
-            </div>
-            <div class="action">
+                <div class="action">
               <button class="btn btn-secondary">
                 Login
               </button>
+              
             </div>
-
-            <div>
+            <div style={{marginTop:"40px"}}>
               <p>
                 Belum Memiliki Akun? Silahkan<a href="/SignUp">Registrasi</a>.
               </p>
-            </div>
-
-
-            <div class="google">
-              <button>
-                <a href="/">
+              <div class="google">
+              <button >
+                <FcGoogle/>
+                <a style={{marginLeft:"20px"}} href="/">
                 </a>
                 Masuk dengan Google
               </button>
             </div>
+            </div>
+              </div>
+            </div>
+            
+
+            
+
+
+            
             {/* <div>
               <p>
                 Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
               </p>
             </div> */}
            </form>
-
+            
            </div>
           </div>
       </Container>

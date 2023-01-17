@@ -46,6 +46,7 @@ const Dashboard =() =>{
       
         <TopBar/>
         <Sidebar/>
+        <Container style={{margin:"50px",marginTop:"0"}}>
         <Container>
       <Row >
         <Col md={{ span: 12, offset: 1 }} style={{marginTop:"60px"}}><Card style={{backgroundColor:"#AAC4FF"}}>
@@ -127,7 +128,7 @@ const Dashboard =() =>{
       
         
         </Container>
-        
+        </Container>
     </div>
   );
 }

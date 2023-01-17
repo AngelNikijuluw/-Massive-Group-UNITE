@@ -51,6 +51,7 @@ const BukuTamu = () =>{
         <div  style={{backgroundColor:"#EEF1FF"}}>
             <TopBAr/>
             <Sidebar />
+            <Container style={{margin:"50px",marginTop:"0"}}>
             <Container>
             
             <Row>
@@ -102,7 +103,7 @@ const BukuTamu = () =>{
       </Row>
             
             </Container>
-            
+            </Container>
         </div>
       );
     }

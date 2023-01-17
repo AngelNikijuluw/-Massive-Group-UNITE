@@ -455,7 +455,7 @@ const Sakura2 = () =>{
           </Card>
 <section style={{backgroundColor:"#fff"}}>
           <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC",marginTop:"40px",backgroundColor:'#fff'}}>Komentar</p>
-          <section style={{textAlign:"left",backgroundColor:"#fff"}}>
+          <section style={{textAlign:"left",backgroundColor:"#fff",margin:"100px"}}>
           <p><strong>Alan & Family</strong></p>
           Dear Yulian and Alfi, Congratulation on your sweet moment of togetherness, My god pour of you with his love endlesslyy. Were very sorry that we cant there for long due to the reason beyond our control. Put god as your leader on every move you both make. Be blessed amen
           <p>1 hour ago</p>

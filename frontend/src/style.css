@@ -809,7 +809,7 @@ button {
 .login-form .action {
   display: -webkit-box;
   display: flex;
-  
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
@@ -818,9 +818,7 @@ button {
 .login-form .action button {
   width: 360px;
   border: 1px solid rgb(168, 162, 162);
-  padding: 12px;
-  margin-left: 100px;
-  margin-bottom: 8px;
+ margin-top: 50px;
   font-family: 'Rubik', sans-serif;
   cursor: pointer;
   background: #447294;
@@ -849,6 +847,7 @@ button {
 .login-form .action button:nth-child(2):hover {
   background: #3c4d6d;
 }
+
 
 .login-form .google button {
   margin-left: 100px;
