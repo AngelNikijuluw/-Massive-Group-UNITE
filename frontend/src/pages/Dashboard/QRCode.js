@@ -51,8 +51,8 @@ function QRCode (){
     return (
         <div  style={{backgroundColor:"#EEF1FF"}}>
             <TopBAr/>
-            <Container>
             <Sidebar/>
+            <Container>
             <Row>
         <Col md={{ span: 12, offset: 1}}><Card style={{backgroundColor:"#AAC4FF",marginTop:"60px"}}>
       <Card.Body >
