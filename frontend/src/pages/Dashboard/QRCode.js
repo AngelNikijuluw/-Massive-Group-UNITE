@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import QrReader from 'react-web-qr-reader';
 import axios from "axios";
 
+
 function QRCode (){
   let [qrdata, setQrdata] = useState('');
   const [email, setEmail] = useState('');
@@ -71,12 +72,12 @@ function QRCode (){
         <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
         <form onSubmit={ SignUp }>
            <div>
-            <Link to="/">
-            <Fab style={{marginRight:10}} color="primary">
-                <ArrowBack/>
-            </Fab>
+            <Link to=".">
+            
             </Link>
-            <span>QR Scanner</span>
+            <span
+            style={{fontSize:20}}
+            >QR Scanner</span>
             
             <center>
             <div style={{marginTop:30}}>
@@ -91,7 +92,7 @@ function QRCode (){
                   <input
                     type="text"
                     class="form"
-                    style={{fontsize:18, width:320, hight:100, marginTop:300}}
+                    style={{fontsize:18, width:320, hight:100, marginTop:300,marginBottom:15}}
                     
                     value={qrdata} onChange={(e)=> setQrdata(e.target.value)}
                     required
