@@ -60,45 +60,43 @@ function SignUp() {
                      <h1>SignUp</h1>
                      <p className="has-text-centered">{msg}</p>
                        <div class="content">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-15 mb-3">
                            <label
                             style={{ textAlign: "justify" }}
-                  
                 >
-                  Nama
                   <input
                     type="text"
                     class="form"
-                    
+                    placeholder="Nama"
                     value={name} onChange={(e)=> setName(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-15 mb-3">
                            <label
                             style={{ textAlign: "justify" }}
                  
                 >
-                  Email
                   <input
                     type="text"
                     class="form"
-                    
+                    placeholder="Email"
                     value={email} onChange={(e)=> setEmail(e.target.value)}
                     required
                   ></input>
                   <div class="valid-feedback">Look</div>
                 </label>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-15 mb-3">
                 <label style={{ textAlign: "left" }} for="validationCustom01">
-                  Password
+                  
                   <input
                     type="password"
                     class="form"
                     id="validationCustom01"
+                    placeholder="Password"
                     value={password} onChange={(e)=> setPassword(e.target.value)}
                     required
                   ></input>

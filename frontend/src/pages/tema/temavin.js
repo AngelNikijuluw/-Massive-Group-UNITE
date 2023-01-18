@@ -24,7 +24,7 @@ const Vin = () =>{
         
         <Link to="/Vin2">
             <Button style={{borderColor:"#000",backgroundColor:"#8D7147",color:"#fff",width:"auto"}}>Buka Undangan</Button>
-            <CountdownTimer />
+            
             </Link>
         </Col>
       </Card.ImgOverlay>
