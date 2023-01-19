@@ -33,7 +33,7 @@ const BW2 = () =>{
                 <Col style={{margin:"10px"}}>
                 <Button style={{backgroundColor:"#000",borderColor:"#000",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
                 <Col style={{margin:"10px"}}>
-                <Button style={{borderColor:"#fff",backgroundColor:"#444444",color:"#fff",borderRadius:"15px"}}>Hadir</Button></Col>
+                <Button style={{borderColor:"#fff",backgroundColor:"#444444",color:"#fff",borderRadius:"15px"}}>Tidak Hadir</Button></Col>
               </Row>
             </Row>
           </div>

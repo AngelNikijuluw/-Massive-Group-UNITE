@@ -34,7 +34,7 @@ const Vin2 = () =>{
                 <Col style={{margin:"20px"}}>
                 <Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
                 <Col style={{margin:"20px"}}>
-                <Button style={{borderColor:"#8D7147",backgroundColor:"#CCC0B0",color:"#8D7147",borderRadius:"15px"}}>Hadir</Button></Col>
+                <Button style={{borderColor:"#8D7147",backgroundColor:"#CCC0B0",color:"#8D7147",borderRadius:"15px"}}>Tidak Hadir</Button></Col>
               </Row>
             </Row>
           </div>

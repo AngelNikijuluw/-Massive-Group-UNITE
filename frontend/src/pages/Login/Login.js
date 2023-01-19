@@ -111,7 +111,7 @@ function Login() {
            
             <div>
               <p>
-              Belum Memiliki Akun? Silahkan<a href="/SignUp"> SignUp</a>.
+              Belum Memiliki Akun? Silahkan <a href="/SignUp"> SignUp</a>.
               </p>
             </div> 
            </form>

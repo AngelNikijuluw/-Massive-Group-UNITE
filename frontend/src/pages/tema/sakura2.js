@@ -33,7 +33,7 @@ const Sakura2 = () =>{
                 <Col style={{margin:"10px"}}>
                 <Button style={{backgroundColor:"#FFA8BA",borderColor:"#fff",color:"fff",borderRadius:"15px"}}>Hadir</Button></Col>
                 <Col style={{margin:"10px"}}>
-                <Button style={{borderColor:"#F144AC",backgroundColor:"#FFDAD8",color:"#F144AC",borderRadius:"15px"}}>Hadir</Button></Col>
+                <Button style={{borderColor:"#F144AC",backgroundColor:"#FFDAD8",color:"#F144AC",borderRadius:"15px"}}>Tidak Hadir</Button></Col>
               </Row>
             </Row>
           </div>
