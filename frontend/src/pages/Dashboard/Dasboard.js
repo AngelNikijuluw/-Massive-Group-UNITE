@@ -112,18 +112,24 @@ const Dashboard =() =>{
       </Card.Body>
     </Card></Col>
 
-    <Col md={{ span: 12, offset: 1 }}><Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
+
+    
+    <Col md={{ span: 12, offset: 1 }}>
+    <Card style={{backgroundColor:"#AAC4FF",marginTop:"20px"}}>
+      <Card style={{backgroundColor:"#AAC4FF",marginTop:"20px", marginLeft:"380px", marginRight:"380px", marginBottom:"20px"}}>
       <Card.Body>
       <Card.Text style={{textAlign:"center", fontSize:"20px"}}>
         <h1>Calender</h1>
-        
+
         </Card.Text>
+     
         <Card.Text>
         <Calendar onChange={onChange} value={value} />
         </Card.Text>
+ 
       </Card.Body>
       
-    </Card></Col>
+    </Card></Card></Col>
       </Row>
       
         
