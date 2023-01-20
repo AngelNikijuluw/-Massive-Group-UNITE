@@ -1,12 +1,9 @@
 import React from 'react';
-import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Row,Col,Button, Card, Form} from 'react-bootstrap';
 import {
   AiFillInstagram,
   AiFillPlayCircle
-  
 } from "react-icons/ai";
-import Footer from '../../components/Footer';
 const BW2 = () =>{
     return (
         

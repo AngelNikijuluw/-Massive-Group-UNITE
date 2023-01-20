@@ -103,15 +103,11 @@ function Login() {
             </div>
             
 
-            
-
-
-            
-            {/* <div>
+            <div>
               <p>
-                Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
+              Belum Memiliki Akun? Silahkan<a href="/SignUp"> SignUp</a>.
               </p>
-            </div> */}
+            </div> 
            </form>
            </div>
           </div>

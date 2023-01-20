@@ -1,12 +1,9 @@
 import React from 'react';
 import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import {
   AiFillInstagram,
   AiFillPlayCircle
-  
 } from "react-icons/ai";
-import Footer from '../../components/Footer';
 const Sakura2 = () =>{
     return (
         

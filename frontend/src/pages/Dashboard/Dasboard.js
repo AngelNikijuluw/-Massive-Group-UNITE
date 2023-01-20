@@ -1,9 +1,4 @@
-import { Container, Row, Col, Card, CardGroup, Button,Table } from "react-bootstrap";
-import homeLogo from "../../Assets/barcode.svg";
-import rsvp from "../../Assets/rsvp.svg";
-import wallet from "../../Assets/wallet.svg";
-import tamu from "../../Assets/tamu.svg";
-import Layout from "../../components/Layout";
+import { Container, Row, Col, Card, Button,Table } from "react-bootstrap";
 import Sidebar from "../../components/Sidebar";
 import TopBar from "../../components/TopBar";
 import React, { useState, useEffect } from 'react';

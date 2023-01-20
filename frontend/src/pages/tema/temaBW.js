@@ -1,15 +1,11 @@
 import React from 'react';
-import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
+import {Row,Col,Button, Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const BW = () =>{
     return (
-        
       <section>
-             
       <strong>
       <Row>
-                
-                
       <Card.Img src={require('../../image/BW1.png')} style={{backgroundSize: "cover",width:"100%"}} />
       <Card.ImgOverlay>
       <Col sm={5} style={{float:"left",height:"auto"}}>

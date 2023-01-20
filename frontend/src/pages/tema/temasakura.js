@@ -1,15 +1,11 @@
 import React from 'react';
-import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
+import {Row,Col,Button, Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const Sakura = () =>{
-    return (
-        
-      <section>
-             
+    return (    
+      <section>        
       <strong>
-      <Row>
-                
-                
+      <Row>       
       <Card.Img src={require('../../image/sakura1.png')} style={{backgroundSize: "cover",width:"100%"}} />
       <Card.ImgOverlay>
       <Col sm={6} style={{float:"right",height:"auto"}}>

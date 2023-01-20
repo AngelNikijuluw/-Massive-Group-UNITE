@@ -62,13 +62,6 @@ function QRCode (){
         <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
         <form onSubmit={ Postdb }>
            <div>
-            <Link to="/">
-            <Fab style={{marginRight:10}} color="primary">
-                <ArrowBack/>
-            </Fab>
-            </Link>
-            <span>QR Scanner</span>
-            
             <span
             style={{fontSize:20}}
             >QR Scanner</span>
