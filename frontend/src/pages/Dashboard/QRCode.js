@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar';
 import QrReader from 'react-web-qr-reader';
 import axios from "axios";
 
+
 function QRCode (){
   let [qrdata, setQrdata] = useState('');
   const [hadir] = useState('Hadir');
@@ -61,6 +62,12 @@ function QRCode (){
         <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
         <form onSubmit={ Postdb }>
            <div>
+            <Link to="/">
+            <Fab style={{marginRight:10}} color="primary">
+                <ArrowBack/>
+            </Fab>
+            </Link>
+            <span>QR Scanner</span>
             
             <span
             style={{fontSize:20}}
@@ -79,6 +86,7 @@ function QRCode (){
                     type="text"
                     class="form"
                     style={{fontsize:18, width:320, hight:100, marginTop:300}}
+                    
                     value={qrdata} onChange={(e)=> setQrdata(e.target.value)}
                     required
                   ></input>

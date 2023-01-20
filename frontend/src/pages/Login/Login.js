@@ -40,7 +40,7 @@ function Login() {
                   src={homeLogo}
                   alt="home pic"
                   className="img-fluid"
-                  style={{ maxHeight: "800px" }}
+                  style={{ maxHeight: "700px" }}
                 />
               </Col>
                 {/* <img
@@ -89,21 +89,29 @@ function Login() {
               </button>
               
             </div>
-            <div style={{marginTop:"40px"}}>
-              <p>
-                Belum Memiliki Akun? Silahkan<a href="/SignUp">Registrasi</a>.
-              </p>
+            <div style={{marginTop:"20px"}}>
               <div class="google">
               <button >
                 <FcGoogle/>
                 <a style={{marginLeft:"20px"}} href="/">
                 </a>
-                Masuk dengan Google
+                Login dengan Google
               </button>
             </div>
             </div>
               </div>
             </div>
+            
+
+            
+
+
+            
+            {/* <div>
+              <p>
+                Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
+              </p>
+            </div> */}
            </form>
            </div>
           </div>

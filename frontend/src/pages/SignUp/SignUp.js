@@ -98,7 +98,7 @@ function SignUp() {
               </div>
               <div class="action">
               <button class="btn btn-secondary">
-                Daftar
+                SignUp
               </button>
               
             </div>
@@ -107,14 +107,14 @@ function SignUp() {
               <FcGoogle/>
                 <a style={{marginLeft:"20px"}} href="/">
                 </a>
-                SignUp dengan Google
+                Login with Google
                 
               </button>
             </div>
             </div>
             <div>
               <p>
-                Sudah Memiliki Akun ? <a href="/Login">Masuk</a>.
+                Sudah Memiliki Akun ? <a href="/Login"> Login</a>.
               </p>
             </div>
            </form>
