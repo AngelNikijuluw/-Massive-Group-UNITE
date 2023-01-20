@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "./pages/Pre";
 import Home from "./pages/Home/Home";
 import Fitur from "./pages/Home/Home2";
 import Harga from "./pages/Home/Home4";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
-import Profile from "./pages/Profile/Profile";
-import Sidebar from './components/Sidebar.js';
 import BukuTamu from './pages/Dashboard/BukuTamu';
 import BuatUndangan from './pages//Dashboard/BuatUndangan';
 import Dashboard from './pages/Dashboard/Dasboard';
-import Product from './pages/Dashboard/QRCode';
-
 
 import {
   BrowserRouter as Router,
@@ -56,7 +51,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/SignUp" element={<SignUp />} />
-            <Route path="/Profile" element={<Profile />} />
             <Route exact path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/fitur" element={<Fitur />} />

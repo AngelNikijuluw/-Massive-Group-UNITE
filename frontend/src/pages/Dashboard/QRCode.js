@@ -3,18 +3,14 @@ import { Container } from 'react-bootstrap';
 import TopBAr from '../../components/TopBar';
 import { Card,Col,Row,Button } from 'react-bootstrap';
 import Sidebar from '../../components/Sidebar';
-import {Fab, TextareaAutosize} from '@material-ui/core'
-import {ArrowBack} from '@material-ui/icons'
-import { Link } from "react-router-dom";
 import QrReader from 'react-web-qr-reader';
 import axios from "axios";
 
 function QRCode (){
   let [qrdata, setQrdata] = useState('');
-  const [email, setEmail] = useState('');
-  const [hadir, setHadir] = useState('Hadir');
-  const [msg, setMsg] = useState('');
+  const [hadir] = useState('Hadir');
   const [result, setResult] = useState('');
+  const [setMsg] = useState('');
   const handleScan = (result) => {
       if (result) {
           setResult(result)
@@ -26,17 +22,14 @@ function QRCode (){
   const data= (JSON.stringify(result));
   const hasil =JSON.parse(data);
 
-
   qrdata =(hasil.data);
-  
 
-
-  const SignUp = async(e) =>{
+  const Postdb = async(e) =>{
     e.preventDefault();
     try {
       await axios.post('http://localhost:5000/qrcode',{
-        name: qrdata,
-        email: hadir
+        linkqr: qrdata,
+        status: hadir
       
       });
 
@@ -49,9 +42,6 @@ function QRCode (){
 
   }
 
- 
-  
-  
     return (
         <div  style={{backgroundColor:"#EEF1FF"}}>
             <TopBAr/>
@@ -69,15 +59,12 @@ function QRCode (){
     </Card></Col>
         <Col md={{ span: 12, offset: 1 }}>
         <Card Card style={{backgroundColor:"#AAC4FF",height:"500px",marginTop:"20px"}}>
-        <form onSubmit={ SignUp }>
+        <form onSubmit={ Postdb }>
            <div>
-            <Link to="/">
-            <Fab style={{marginRight:10}} color="primary">
-                <ArrowBack/>
-            </Fab>
-            </Link>
-            <span>QR Scanner</span>
             
+            <span
+            style={{fontSize:20}}
+            >QR Scanner</span>
             <center>
             <div style={{marginTop:30}}>
                 <QrReader
@@ -92,7 +79,6 @@ function QRCode (){
                     type="text"
                     class="form"
                     style={{fontsize:18, width:320, hight:100, marginTop:300}}
-                    
                     value={qrdata} onChange={(e)=> setQrdata(e.target.value)}
                     required
                   ></input>
@@ -104,15 +90,10 @@ function QRCode (){
       </div>
       </form>
         </Card>
-        </Col>
-    
-    
-    </Row>
-             
-          
-            
-            </Container>
-            </Container>
+        </Col>  
+    </Row> 
+      </Container>
+      </Container>
         </div>
       );
     }

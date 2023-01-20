@@ -1,10 +1,9 @@
 import React,{ useState } from "react";
-import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
 import homeLogo from "../../Assets/gambarlogin.png";
-import foto from "../../Assets/foto.png";
 import {FcGoogle}from "react-icons/fc";
 
 function Login() {
@@ -12,8 +11,6 @@ function Login() {
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
   const navigate = useNavigate();
-
-
   const Auth = async(e) =>{
     e.preventDefault();
     try {
@@ -31,9 +28,6 @@ function Login() {
 
   }
 
-
-
-
   return (
     <Layout title="UNI Vitation | Login">
     <Container fluid className="home-about-section" id="about">
@@ -42,7 +36,6 @@ function Login() {
              <Col
                 sm={5}
               >
-
                 <img
                   src={homeLogo}
                   alt="home pic"
@@ -111,19 +104,7 @@ function Login() {
             </div>
               </div>
             </div>
-            
-
-            
-
-
-            
-            {/* <div>
-              <p>
-                Belum Memiliki Akun? <a href="/SignUp">Registrasi</a>.
-              </p>
-            </div> */}
            </form>
-            
            </div>
           </div>
       </Container>

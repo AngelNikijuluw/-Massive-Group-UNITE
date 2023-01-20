@@ -15,6 +15,18 @@ export const getUsers = async(req, res) => {
     }
 }
 
+export const getQr = async(req, res) => {
+    try {
+        const users = await Qrdata.findAll({
+            attributes:['id','linkqr','status','createdAt']
+        });
+        res.json(users);
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+
 export const Register = async(req, res)=> {
     const { name, email, password } = req.body;
     
@@ -33,13 +45,13 @@ export const Register = async(req, res)=> {
 }
 
 export const Qrcode = async(req, res)=> {
-    const { name, email } = req.body;
+    const { linkqr, status } = req.body;
     
  
     try {
         await Qrdata.create({
-            name: name,
-            email: email
+            linkqr: linkqr,
+            status: status
             
            
         });

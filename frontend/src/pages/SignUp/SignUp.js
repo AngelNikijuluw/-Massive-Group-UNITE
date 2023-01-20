@@ -1,12 +1,8 @@
 import React,{ useState } from "react";
-import { Container, Card, CardGroup, Button, Row, Col, } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Layout from "../../components/Layout";
-import {Fab, TextareaAutosize} from '@material-ui/core'
-import {ArrowBack} from '@material-ui/icons'
-import { Link } from "react-router-dom";
-import QrReader from 'react-web-qr-reader';
 import homeLogo from "../../Assets/gambarlogin.png";
 import {FcGoogle}from "react-icons/fc";
 
@@ -16,8 +12,6 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
   const navigate = useNavigate();
- 
-
   const SignUp = async(e) =>{
     e.preventDefault();
     try {
@@ -35,7 +29,6 @@ function SignUp() {
     }
 
   }
-
 
   return (
     <Layout title="UNI Vitation | SignUp">
@@ -119,8 +112,6 @@ function SignUp() {
               </button>
             </div>
             </div>
-            
-            
             <div>
               <p>
                 Sudah Memiliki Akun ? <a href="/Login">Masuk</a>.
@@ -128,7 +119,6 @@ function SignUp() {
             </div>
            </form>
            </div>
-           
           </div>
       </Container>
     </Container>

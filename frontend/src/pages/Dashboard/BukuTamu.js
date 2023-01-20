@@ -4,17 +4,13 @@ import TopBAr from '../../components/TopBar';
 import { Container,Row,Col,Button, Card, Table, Form} from 'react-bootstrap';
 import {BsPlusCircle}  from "react-icons/bs";
 import axios from 'axios';
-import jwt_decode from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 
 
 const BukuTamu = () =>{
   const [token, setToken] = useState('');
   const [qrdata, setqrdata] = useState([]);
-  const [name, setName] = useState('');
-  const [expire, setExpire] = useState('');
   const navigate = useNavigate();
-  const [value, onChange]  = useState(new Date());;
 
   useEffect(() =>{
     refreshToken();
@@ -26,9 +22,6 @@ const BukuTamu = () =>{
     try {
       const response = await axios.get('http://localhost:5000/tokenqr');
       setToken(response.data.accessToken);
-      const decoded = jwt_decode(response.data.accessToken);
-      setName(decoded.name);
-      setExpire(decoded.exp);
     } catch (error) {
       if(error.response){
         navigate("/login");
@@ -85,8 +78,8 @@ const BukuTamu = () =>{
             {qrdata.map((user, index) =>(
               <tr key={user.id}>
                 <td>{index + 1}</td>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
+                <td>{user.linkqr}</td>
+                <td>{user.status}</td>
                 <td>{user.createdAt}</td>
               </tr>
             ))}

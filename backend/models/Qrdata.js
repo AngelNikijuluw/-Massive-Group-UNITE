@@ -4,10 +4,10 @@ import db from "../config/Database.js";
 const { DataTypes } = Sequelize;
 
 const Qrdata = db.define('qrcode',{
-    name:{
+    linkqr:{
         type: DataTypes.STRING
     },
-    email:{
+    status:{
         type: DataTypes.STRING
     }
 },{

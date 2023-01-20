@@ -5,13 +5,9 @@ import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 import CountdownTimer from "./CountdownTimer.js";
 const Vin = () =>{
     return (
-        
             <section>
-             
       <strong>
-      <Row>
-                
-                
+      <Row>  
       <Card.Img src={require('../../image/vin1.png')} style={{backgroundSize: "cover",width:"100%"}} />
       <Card.ImgOverlay>
       <Col sm={6} style={{float:"left",height:"auto"}}>
@@ -24,13 +20,9 @@ const Vin = () =>{
         
         <Link to="/Vin2">
             <Button style={{borderColor:"#000",backgroundColor:"#8D7147",color:"#fff",width:"auto"}}>Buka Undangan</Button>
-            
             </Link>
         </Col>
       </Card.ImgOverlay>
-      
-      
-                
               </Row>
             
     </strong>
