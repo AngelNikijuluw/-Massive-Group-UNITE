@@ -850,7 +850,6 @@ button {
 
 
 .login-form .google button {
-  margin-left: 100px;
   width: 360px;
   justify-content: center;
   margin-top: 60px;
@@ -859,6 +858,15 @@ button {
   color: #000;
   border: 1px solid rgb(168, 162, 162);
   background-color: #fff;
+}
+
+.login-form .google {
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
 }
 
 /* --------- */

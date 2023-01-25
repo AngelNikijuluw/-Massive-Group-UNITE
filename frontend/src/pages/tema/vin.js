@@ -341,8 +341,8 @@ const Vin2 = () =>{
               
               <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#444444",marginTop:"40px"}}>Map Lokasi</p>
             
-             <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
-             <p><Button style={{backgroundColor:"#8D7147",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}}>View Maps</Button></p>
+             <img src={require('../../image/maps.png')} style={{width:"400px",position:"relative"}}/>
+             <p><Button style={{backgroundColor:"#8D7147",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}} href="https://www.google.com/maps/@0.9142272,104.5037056,14z">View Maps</Button></p>
             
             
             
@@ -350,7 +350,7 @@ const Vin2 = () =>{
             </section>
             <div style={{backgroundColor:"#CCC0B0",width:"auto",height:"460px",marginTop:"50px"}}>
              <section style={{marginTop:"50px"}}>
-              <p style={{fontFamily:"Corinthia",fontSize:"70px",color:"#000",marginTop:"170px"}}>Ampau Cashless</p>
+              <p style={{fontFamily:"Corinthia",fontSize:"70px",color:"#000",marginTop:"170px"}}>Angpao Cashless</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               <p style={{color:"#000",fontSize:"15px"}}>Tanpa mengurangi rasa hormat , bagi anda yang ingin memberi tanda kasih untuk kami melalui</p>
               <p style={{color:"#000",fontSize:"15px"}}>Mandiri</p>
@@ -365,6 +365,7 @@ const Vin2 = () =>{
               <Card style={{backgroundColor:"#fff",borderColor:"#8D7147",marginTop:"150px",width:"auto",}}>
               <p style={{fontFamily:"Corinthia",fontSize:"60px",color:"#8D7147",marginTop:"40px", }}>Code  QR  Tamu</p>
               <p><Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
+              <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
               </Card>
               </div>
               

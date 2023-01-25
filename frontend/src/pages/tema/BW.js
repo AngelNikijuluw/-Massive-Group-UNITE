@@ -337,8 +337,8 @@ const BW2 = () =>{
               
               <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#000",marginTop:"40px"}}>Map Lokasi</p>
             
-             <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
-             <p><Button style={{backgroundColor:"#000",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}}>View Maps</Button></p>
+             <img src={require('../../image/maps.png')} style={{width:"400px",position:"relative"}}/>
+             <p><Button style={{backgroundColor:"#000",borderColor:"#fff",marginTop:"50px",borderRadius:"20px",width:"auto"}}href="https://www.google.com/maps/@0.9142272,104.5037056,14z">View Maps</Button></p>
             
             
             
