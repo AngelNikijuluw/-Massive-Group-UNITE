@@ -368,7 +368,7 @@ const Vin2 = () =>{
               <img src={require('../../image/qrundangan.png')} style={{width:"250px"}}/>
               </p>
               <p><Button style={{backgroundColor:"#8D7147",borderColor:"#8D7147",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
-              <img src={require('../../image/maps.png')} style={{width:"300px",position:"relative"}}/>
+              
               </Card>
               </div>
               
