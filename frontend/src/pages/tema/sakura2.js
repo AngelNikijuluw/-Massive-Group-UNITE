@@ -360,13 +360,16 @@ const Sakura2 = () =>{
               <div style={{backgroundColor:"#fff",width:"auto",height:"500px",marginTop:"150px",}}>
               <Card style={{backgroundColor:"#fff",borderColor:"#FFA8BA",marginTop:"150px",width:"auto",}}>
               <p style={{fontFamily:"Corinthia",fontSize:"60px",color:"#F144AC",marginTop:"40px", }}>Code  QR  Tamu</p>
+              <p>
+              <img src={require('../../image/qrundangan.png')} style={{width:"250px"}}/>
+              </p>
               <p><Button style={{backgroundColor:"#FFA8BA",borderColor:"#FFA8BA",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
               </Card>
               </div>
               
               </section>
               </div>
-              <Card style={{marginTop:"370px",backgroundColor:"#FFDAD8"}}>
+              <Card style={{marginTop:"600px",backgroundColor:"#FFDAD8"}}>
               <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#F144AC"}}>Protokol Kesehatan</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               

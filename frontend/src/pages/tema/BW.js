@@ -360,13 +360,16 @@ const BW2 = () =>{
               <div style={{backgroundColor:"#fff",width:"auto",height:"500px",marginTop:"150px",}}>
               <Card style={{backgroundColor:"#fff",borderColor:"#000",marginTop:"150px",width:"auto",}}>
               <p style={{fontFamily:"Corinthia",fontSize:"60px",color:"#000",marginTop:"40px", }}>Code  QR  Tamu</p>
+              <p>
+              <img src={require('../../image/qrundangan.png')} style={{width:"250px"}}/>
+              </p>
               <p><Button style={{backgroundColor:"#444444",borderColor:"#000",borderRadius:"15px",width:"100px"}}>Buka</Button></p>
               </Card>
               </div>
               
               </section>
               </div>
-              <Card style={{marginTop:"370px",backgroundColor:"#444444"}}>
+              <Card style={{marginTop:"600px",backgroundColor:"#444444"}}>
               <p style={{fontFamily:"Corinthia",fontSize:"80px",color:"#fff"}}>Protokol Kesehatan</p>
               <link href="https://fonts.googleapis.com/css?family=Corinthia" rel="stylesheet"></link>
               
